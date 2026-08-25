@@ -41,3 +41,27 @@ normidar.com (Coin Galaxy) のマーケティングサイト改善バックロ�
 ### 5. .gitignore再確認 (完了・対応不要)
 
 `*~`ルールが既に存在し、`icon.png~`のようなバックアップファイルはカバー済みと確認。追加対応なし。
+
+### 6. プライバシーポリシーURLが壊れていた (完了・別リポジトリ側も修正)
+
+`apps/{bookkeeping,polygon}/fastlane/metadata/**/privacy_url.txt`と、アプリ内(`assets/localizations/*.json`の`store_ios_privacy_url`)が、リポジトリ名変更前(colaxy→colaxy-pages)の存在しないGitHub blob URLを指したままだった。**現在ストアで配信中のバージョンで、アプリ内の「プライバシーポリシー」リンクが実際に404していた。** Colaxy-apps側でPRを作成して修正済み([#24](https://github.com/normidar/Colaxy-apps/pull/24))。反映には別途アプリの新バージョンリリース、およびストア掲載メタデータの再提出が必要(このPRだけでは配信されない)。
+
+### 7. プライバシーポリシーページに戻る導線がなかった (完了)
+
+`docs/privacy-policy/*/*.html`(16ファイル)がMarkdownを流し込むだけの無地ページで、ロゴやホームへのリンクが一切なかった。各ページに「Coin Galaxyロゴ→ホーム」「← アプリページに戻る(該当アプリのページへ、ロケールごとに翻訳済み)」を追加。
+
+### 8. index.htmlにapple-touch-iconがなかった (完了)
+
+トップページだけ`apple-touch-icon`が未設定で、iOSホーム画面に追加すると汎用アイコンになっていた。`favicon.svg`(青い円のプレースホルダー)から180x180のPNGを生成して`icon/apple-touch-icon.png`として追加し、index.htmlと新設の404.htmlに設定。**favicon自体が単色円のプレースホルダーなので、いずれ正式なブランドアイコンに差し替えることを推奨。**
+
+### 9. Googleフォントの読み込みが`@import`だった (一部対応)
+
+`style.css`冒頭の`@import url(...)`はCSSパース後に発見されるため描画が遅れる。index.html + apps/4ページに`<link rel="preconnect">` + `<link rel="stylesheet">`を追加(発見を早める)。`style.css`側の`@import`はprivacy-policyページ(16ファイル)がまだ依存しているため残置。
+
+### 10. 構造化データ(JSON-LD)がなかった (完了)
+
+各アプリ詳細ページに`SoftwareApplication`のJSON-LDを追加(名前・説明・カテゴリ・App Store/Google PlayのURL・価格情報)。検索結果でのリッチリザルト表示を狙う。
+
+### 11. GitHub Pages用404ページがなかった (完了)
+
+`docs/404.html`を追加。カスタムドメイン(normidar.com)でも自動的に404時に使われる。
