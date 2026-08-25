@@ -50,9 +50,14 @@ normidar.com (Coin Galaxy) のマーケティングサイト改善バックロ�
 
 `docs/privacy-policy/*/*.html`(16ファイル)がMarkdownを流し込むだけの無地ページで、ロゴやホームへのリンクが一切なかった。各ページに「Coin Galaxyロゴ→ホーム」「← アプリページに戻る(該当アプリのページへ、ロケールごとに翻訳済み)」を追加。
 
-### 8. index.htmlにapple-touch-iconがなかった (完了)
+### 8. ブランドアイコンを作成 (完了)
 
-トップページだけ`apple-touch-icon`が未設定で、iOSホーム画面に追加すると汎用アイコンになっていた。`favicon.svg`(青い円のプレースホルダー)から180x180のPNGを生成して`icon/apple-touch-icon.png`として追加し、index.htmlと新設の404.htmlに設定。**favicon自体が単色円のプレースホルダーなので、いずれ正式なブランドアイコンに差し替えることを推奨。**
+`favicon.svg`が単色の青い円(`fill="blue"`、サイトの実際のカラー#00aaffとも不一致)というプレースホルダーのままだった。サイトの実カラー変数(`--primary-color: #00aaff`、`--background-color: #0a0a1a`)を使い、「Coin(コイン)× Galaxy(軌道)」をモチーフにしたロゴマークを新規デザイン: ダークネイビーの円バッジの中に、シアングラデーションのコイン(頭文字「C」入り)と、傾いた軌道リング+星の粒を配置。16px相当でも色付きの丸として視認でき、180px以上では「C」とリングが明瞭に読める。
+
+- [x] `icon/favicon.svg`を新デザインに差し替え
+- [x] `icon/apple-touch-icon.png`(180x180)を新デザインから再生成
+- [x] `icon/favicon-32.png`(32x32のPNGフォールバック、SVG非対応環境向け)を追加してindex.html/404.htmlに設定
+- [x] `icon/icon-192.png`(PWAアイコン用)、`icon/og-image.png`(512x512、SNSシェア用)を追加
 
 ### 9. Googleフォントの読み込みが`@import`だった (一部対応)
 
@@ -65,3 +70,11 @@ normidar.com (Coin Galaxy) のマーケティングサイト改善バックロ�
 ### 11. GitHub Pages用404ページがなかった (完了)
 
 `docs/404.html`を追加。カスタムドメイン(normidar.com)でも自動的に404時に使われる。
+
+### 12. index.htmlのog:imageがSVGを指しておりSNSシェア画像が壊れていた (完了)
+
+`og:image`/`twitter:image`が`icon/favicon.svg`を指していたが、Facebook/X(Twitter)/LinkedIn/Slackなど主要なOGPスクレイパーの大半はSVGのog:imageに対応しておらず、シェア時のプレビュー画像が事実上表示されない状態だった。新しく作った`icon/og-image.png`(512x512)に差し替え、`og:image:width`/`height`と(元々なかった)`twitter:image`も追加。ついでにindex.htmlの`meta description`にquickreaderが漏れていたのも修正。
+
+### 13. モバイルブラウザのUI色・PWA対応 (完了)
+
+`theme-color`メタタグがどのページにもなく、モバイルSafari/Chromeのアドレスバーがサイトのダークテーマと無関係な既定色になっていた。index.html・apps/4ページ・404.htmlに`<meta name="theme-color" content="#0a0a1a">`を追加。あわせて`site.webmanifest`を新規作成し、ホーム画面への追加(疑似PWA)に対応。
