@@ -521,8 +521,8 @@ const translations = {
     }
 };
 
-// 現在の言語を取得（デフォルトは英語）
-let currentLanguage = localStorage.getItem('language') || 'en';
+// 現在の言語を取得（デフォルトは日本語 - HTMLの初期表示・lang属性と一致させる）
+let currentLanguage = localStorage.getItem('language') || 'ja';
 
 // 言語を変更する関数
 function changeLanguage(lang) {
@@ -534,7 +534,7 @@ function changeLanguage(lang) {
 // コンテンツを更新する関数
 function updateContent() {
     const t = translations[currentLanguage];
-    
+
     // ヘッダー
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
@@ -542,13 +542,15 @@ function updateContent() {
             element.textContent = t[key];
         }
     });
-    
+
+    // スクリーンリーダー・SEO向けに実際の表示言語とlang属性を一致させる
+    document.documentElement.lang = currentLanguage;
+
     // 言語選択ボタンのアクティブ状態を更新
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === currentLanguage) {
-            btn.classList.add('active');
-        }
+        const isActive = btn.getAttribute('data-lang') === currentLanguage;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-current', isActive ? 'true' : 'false');
     });
 }
 
