@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - QuickReader</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/marked.min.js"></script>
+    <style>
+        body {
+            padding: 2rem;
+        }
+        .markdown-body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="markdown-body"></div>
+    <script>
+        fetch('../md/quickreader/en.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            });
+    </script>
+</body>
+</html>

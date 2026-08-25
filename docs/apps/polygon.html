@@ -8,113 +8,20 @@
     <meta property="og:title" content="Polygon Wallet - Coin Galaxy">
     <meta property="og:description" content="言葉だけで簡単にウォレットを作成できるPolygon専用ウォレット">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://normidar.github.io/colaxy/icon/apps/polygon.png">
+    <meta property="og:image" content="https://normidar.com/icon/apps/polygon.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Polygon Wallet">
     <meta name="twitter:description" content="言葉だけで簡単にウォレットを作成できるPolygon専用ウォレット">
-    <meta name="twitter:image" content="https://normidar.github.io/colaxy/icon/apps/polygon.png">
+    <meta name="twitter:image" content="https://normidar.com/icon/apps/polygon.png">
     <link rel="apple-touch-icon" href="../icon/apps/polygon.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../icon/apps/polygon.png" type="image/png">
     <link rel="icon" href="../icon/favicon.svg" type="image/svg+xml">
     <style>
-        .app-hero {
-            background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
-            color: white;
-            padding: 6rem 0 4rem;
-            text-align: center;
-        }
-
-        .app-icon-large {
-            font-size: 6rem;
-            margin-bottom: 2rem;
-        }
-
-        .app-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .app-hero p {
-            font-size: 1.5rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-        }
-
-        .download-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .download-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .section {
-            padding: 4rem 0;
-        }
-
-        .section-alt {
-            background: rgba(139, 92, 246, 0.05);
-        }
-
-        .section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: white;
-        }
-
-        .features-detailed {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .feature-detailed {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            color: white;
-            transition: transform 0.3s;
-        }
-
-        .feature-detailed:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-detailed .icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-detailed h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-detailed p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+        :root {
+            --app-gradient-start: #8B5CF6;
+            --app-gradient-end: #6366F1;
+            --app-alt-bg: rgba(139, 92, 246, 0.05);
         }
 
         .security-features {
@@ -141,79 +48,6 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
-        .screenshots {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .screenshot-placeholder {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 3rem;
-            text-align: center;
-            color: white;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 2px dashed rgba(255, 255, 255, 0.3);
-        }
-
-        .screenshot-placeholder .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-bottom: 2rem;
-            transition: all 0.3s;
-        }
-
-        .back-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .benefit {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            color: white;
-        }
-
-        .benefit .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .app-hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .download-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
     </style>
 </head>
 <body>
@@ -225,6 +59,7 @@
                 <li><a href="bookkeeping.html" data-i18n="stampBookkeeping">Stamp家計簿</a></li>
                 <li><a href="fditor.html" data-i18n="fditor">Fditor</a></li>
                 <li><a href="polygon.html" data-i18n="polygon">Polygon Wallet</a></li>
+                <li><a href="quickreader.html" data-i18n="quickreader">速読ノベル</a></li>
             </ul>
             <div class="language-selector">
                 <button class="lang-btn active" data-lang="ja" onclick="changeLanguage('ja')">日本語</button>
@@ -238,7 +73,7 @@
         <section class="app-hero">
             <div class="container">
                 <a href="../index.html" class="back-btn" data-i18n="backToHome">← ホームに戻る</a>
-                <div class="app-icon-large"><img src="../icon/apps/polygon.png" alt="Polygon Wallet" style="width: 120px; height: 120px; border-radius: 25px;"></div>
+                <div class="app-icon-large"><img src="../icon/apps/polygon.png" alt="Polygon Wallet"></div>
                 <h1 data-i18n="polygon">Polygon Wallet</h1>
                 <p data-i18n="polygonSubtitle">自分だけが知る文書や言葉でウォレットを作成 - シンプルで安全なPolygonウォレット</p>
                 <div class="download-buttons">

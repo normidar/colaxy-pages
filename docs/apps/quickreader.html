@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stamp家計簿 - Coin Galaxy</title>
-    <meta name="description" content="スタンプを押すような感覚で、楽しく簡単に家計管理。視覚的で楽しい家計簿アプリ。">
-    <meta property="og:title" content="Stamp家計簿 - Coin Galaxy">
-    <meta property="og:description" content="スタンプを押すような感覚で、楽しく簡単に家計管理">
+    <title>速読ノベル - Coin Galaxy</title>
+    <meta name="description" content="テキストを意味の塊に分割し、画面を見るだけで読める速読小説アプリ。スクロール不要でノベルをすいすい読めます。">
+    <meta property="og:title" content="速読ノベル - Coin Galaxy">
+    <meta property="og:description" content="画面を見るだけで読める速読小説アプリ">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://normidar.com/icon/apps/bookkeeping.png">
+    <meta property="og:image" content="https://normidar.com/icon/apps/quickreader.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Stamp家計簿">
-    <meta name="twitter:description" content="スタンプを押すような感覚で、楽しく簡単に家計管理">
-    <meta name="twitter:image" content="https://normidar.com/icon/apps/bookkeeping.png">
-    <link rel="apple-touch-icon" href="../icon/apps/bookkeeping.png">
+    <meta name="twitter:title" content="速読ノベル">
+    <meta name="twitter:description" content="画面を見るだけで読める速読小説アプリ">
+    <meta name="twitter:image" content="https://normidar.com/icon/apps/quickreader.png">
+    <link rel="apple-touch-icon" href="../icon/apps/quickreader.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../icon/apps/bookkeeping.png" type="image/png">
+    <link rel="icon" href="../icon/apps/quickreader.png" type="image/png">
     <link rel="icon" href="../icon/favicon.svg" type="image/svg+xml">
     <style>
+        :root {
+            --app-gradient-start: #11998e;
+            --app-gradient-end: #38ef7d;
+            --app-alt-bg: rgba(17, 153, 142, 0.05);
+        }
+
         .how-it-works {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -39,7 +45,7 @@
             top: -15px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            background: linear-gradient(45deg, var(--app-gradient-start), var(--app-gradient-end));
             color: white;
             width: 30px;
             height: 30px;
@@ -79,17 +85,17 @@
         <section class="app-hero">
             <div class="container">
                 <a href="../index.html" class="back-btn" data-i18n="backToHome">← ホームに戻る</a>
-                <div class="app-icon-large"><img src="../icon/apps/bookkeeping.png" alt="Stamp家計簿"></div>
-                <h1 data-i18n="stampBookkeeping">Stamp家計簿</h1>
-                <p data-i18n="stampBookkeepingSubtitle">スタンプを押すような感覚で、楽しく簡単に家計管理</p>
+                <div class="app-icon-large"><img src="../icon/apps/quickreader.png" alt="速読ノベル"></div>
+                <h1 data-i18n="quickreader">速読ノベル</h1>
+                <p data-i18n="quickreaderSubtitle">スクロール不要、画面を見るだけで読める速読アプリ</p>
                 <div class="download-buttons">
-                    <a href="https://apps.apple.com/app/id6740690214" class="download-btn" target="_blank">
-                        <span>📱</span>
-                        App Store
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.normidar.bookkeeping" class="download-btn" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.quickreader" class="download-btn" target="_blank">
                         <span>🤖</span>
                         Google Play
+                    </a>
+                    <a href="https://apps.apple.com/app/id6756515199" class="download-btn" target="_blank">
+                        <span>📱</span>
+                        App Store
                     </a>
                 </div>
             </div>
@@ -100,29 +106,29 @@
                 <h2 data-i18n="mainFeatures">主な機能</h2>
                 <div class="features-detailed">
                     <div class="feature-detailed">
-                        <div class="icon">📝</div>
-                        <h3 data-i18n="initialStamp">初期Stamp作成</h3>
-                        <p data-i18n="initialStampDesc">最初に記帳する時にウォレットの残高で初期Stampを作成。簡単な設定で家計簿を始められます。</p>
+                        <div class="icon">⚡</div>
+                        <h3 data-i18n="chunkReading">チャンク分割速読表示</h3>
+                        <p data-i18n="chunkReadingDesc">テキストを意味の塊(チャンク)に自動分割し、前/現在/次の3段表示で読書速度を向上させます。</p>
                     </div>
                     <div class="feature-detailed">
-                        <div class="icon">🎯</div>
-                        <h3 data-i18n="laterStamp">後日Stamp追加</h3>
-                        <p data-i18n="laterStampDesc">記帳に怠けてしまった場合でも大丈夫。後日にその怠けたウォレットにStampを追加するだけで簡単に記録を更新できます。</p>
+                        <div class="icon">📂</div>
+                        <h3 data-i18n="fileImport">ファイル読み込み・貼り付け</h3>
+                        <p data-i18n="fileImportDesc">txtファイルの読み込みや、テキストを直接貼り付けるだけで好きな小説をすぐに追加できます。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon">🔍</div>
+                        <h3 data-i18n="naroIntegration">小説家になろう連携</h3>
+                        <p data-i18n="naroIntegrationDesc">「小説家になろう」の小説を検索してそのままダウンロード。お気に入りの作品をすぐに読み始められます。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon">📚</div>
+                        <h3 data-i18n="bookshelf">本棚・続きから読む</h3>
+                        <p data-i18n="bookshelfDesc">読み込んだ本を本棚で一覧管理。前回の続きから、ワンタップで読書を再開できます。</p>
                     </div>
                     <div class="feature-detailed">
                         <div class="icon">🎨</div>
-                        <h3 data-i18n="simpleUI">シンプルな画面</h3>
-                        <p data-i18n="simpleUIDesc">直感的で使いやすいシンプルなデザイン。複雑な操作は一切不要で、誰でも簡単に家計管理ができます。</p>
-                    </div>
-                    <div class="feature-detailed">
-                        <div class="icon">🌍</div>
-                        <h3 data-i18n="multilingual">多言語対応</h3>
-                        <p data-i18n="multilingualDesc">日本語、英語、中国語に対応。世界中のユーザーが自分の言語で快適に使用できます。</p>
-                    </div>
-                    <div class="feature-detailed">
-                        <div class="icon">🎨</div>
-                        <h3 data-i18n="themeSelection">テーマ選択</h3>
-                        <p data-i18n="themeSelectionDesc">お好みに合わせてテーマを選択可能。自分らしいカスタマイズで楽しく家計管理を続けられます。</p>
+                        <h3 data-i18n="qrThemeSelection">テーマ・速度カスタマイズ</h3>
+                        <p data-i18n="qrThemeSelectionDesc">表示テーマや読書速度を自分好みに調整できる設定画面を搭載。</p>
                     </div>
                     <div class="feature-detailed">
                         <div class="icon">💰</div>
@@ -139,23 +145,23 @@
                 <div class="how-it-works">
                     <div class="step">
                         <div class="step-number">1</div>
-                        <h3 data-i18n="step1Title">アプリを起動</h3>
-                        <p data-i18n="step1Desc">Stamp家計簿を開いて、今日の家計簿を始めましょう。</p>
+                        <h3 data-i18n="qrStep1Title">本を追加</h3>
+                        <p data-i18n="qrStep1Desc">ファイル読み込み・テキスト貼り付け・なろう検索のいずれかで読みたい小説を追加します。</p>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
-                        <h3 data-i18n="step2Title">スタンプを選択</h3>
-                        <p data-i18n="step2Desc">食費、交通費、娯楽費など、カテゴリに応じたスタンプを選択します。</p>
+                        <h3 data-i18n="qrStep2Title">本棚から選択</h3>
+                        <p data-i18n="qrStep2Desc">本棚タブから読みたい本をタップして開きます。</p>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
-                        <h3 data-i18n="step3Title">金額を入力</h3>
-                        <p data-i18n="step3Desc">支出した金額を入力して、スタンプを押すように記録完了。</p>
+                        <h3 data-i18n="qrStep3Title">画面を見るだけ</h3>
+                        <p data-i18n="qrStep3Desc">チャンク表示された文章を見ているだけで、スクロール不要でどんどん読み進められます。</p>
                     </div>
                     <div class="step">
                         <div class="step-number">4</div>
-                        <h3 data-i18n="step4Title">分析を確認</h3>
-                        <p data-i18n="step4Desc">月末に支出の傾向や予算の達成状況を確認して、次月の計画を立てます。</p>
+                        <h3 data-i18n="qrStep4Title">続きから読む</h3>
+                        <p data-i18n="qrStep4Desc">アプリを閉じても読書位置が自動保存され、いつでも続きから再開できます。</p>
                     </div>
                 </div>
             </div>
@@ -166,24 +172,24 @@
                 <h2 data-i18n="screenshots">スクリーンショット</h2>
                 <div class="screenshots">
                     <div class="screenshot-placeholder">
-                        <div class="icon">📱</div>
-                        <h3 data-i18n="mainScreen">メイン画面</h3>
-                        <p data-i18n="mainScreenDesc">直感的なスタンプ入力画面</p>
+                        <div class="icon">⚡</div>
+                        <h3 data-i18n="qrMainScreen">速読画面</h3>
+                        <p data-i18n="qrMainScreenDesc">チャンク表示で読み進める速読インターフェース</p>
                     </div>
                     <div class="screenshot-placeholder">
-                        <div class="icon">📊</div>
-                        <h3 data-i18n="analysisScreen">分析画面</h3>
-                        <p data-i18n="analysisScreenDesc">視覚的な支出分析とグラフ</p>
+                        <div class="icon">📚</div>
+                        <h3 data-i18n="qrBookshelfScreen">本棚画面</h3>
+                        <p data-i18n="qrBookshelfScreenDesc">読み込んだ本を一覧管理</p>
                     </div>
                     <div class="screenshot-placeholder">
-                        <div class="icon">🎯</div>
-                        <h3 data-i18n="budgetScreen">予算管理</h3>
-                        <p data-i18n="budgetScreenDesc">月別予算設定と進捗確認</p>
+                        <div class="icon">🔍</div>
+                        <h3 data-i18n="qrNaroScreen">なろう検索画面</h3>
+                        <p data-i18n="qrNaroScreenDesc">小説家になろうの作品を検索・ダウンロード</p>
                     </div>
                     <div class="screenshot-placeholder">
-                        <div class="icon">📅</div>
-                        <h3 data-i18n="historyScreen">履歴画面</h3>
-                        <p data-i18n="historyScreenDesc">過去の支出履歴と検索機能</p>
+                        <div class="icon">⚙️</div>
+                        <h3 data-i18n="qrSettingsScreen">設定画面</h3>
+                        <p data-i18n="qrSettingsScreenDesc">テーマや速度などを自分好みに調整</p>
                     </div>
                 </div>
             </div>
@@ -192,17 +198,17 @@
         <section class="section section-alt">
             <div class="container" style="text-align: center;">
                 <h2 data-i18n="downloadNow">今すぐダウンロード</h2>
-                <p style="color: white; font-size: 1.2rem; margin-bottom: 2rem;" data-i18n="downloadMessage">
-                    Stamp家計簿で、楽しく簡単な家計管理を始めませんか？
+                <p style="color: white; font-size: 1.2rem; margin-bottom: 2rem;" data-i18n="quickreaderDownloadMessage">
+                    速読ノベルで、スクロール不要のサクサク読書を始めませんか？
                 </p>
                 <div class="download-buttons">
-                    <a href="https://apps.apple.com/app/id6740690214" class="download-btn" target="_blank">
-                        <span>📱</span>
-                        App Store
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.normidar.bookkeeping" class="download-btn" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.quickreader" class="download-btn" target="_blank">
                         <span>🤖</span>
                         Google Play
+                    </a>
+                    <a href="https://apps.apple.com/app/id6756515199" class="download-btn" target="_blank">
+                        <span>📱</span>
+                        App Store
                     </a>
                 </div>
             </div>
@@ -221,4 +227,4 @@
 
     <script src="../js/localization.js"></script>
 </body>
-</html> 
+</html>
