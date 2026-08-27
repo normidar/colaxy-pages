@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>速読ノベル - Coin Galaxy</title>
+    <meta name="description" content="テキストを意味の塊に分割し、画面を見るだけで読める速読小説アプリ。スクロール不要でノベルをすいすい読めます。">
+    <meta property="og:title" content="速読ノベル - Coin Galaxy">
+    <meta property="og:description" content="画面を見るだけで読める速読小説アプリ">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://normidar.com/apps/quickreader.html">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://normidar.com/icon/apps/quickreader.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="速読ノベル">
+    <meta name="twitter:description" content="画面を見るだけで読める速読小説アプリ">
+    <meta name="twitter:image" content="https://normidar.com/icon/apps/quickreader.png">
+    <link rel="apple-touch-icon" href="../icon/apps/quickreader.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../icon/apps/quickreader.png" type="image/png">
+    <link rel="icon" href="../icon/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0a0a1a">
+    <style>
+        :root {
+            --app-gradient-start: #11998e;
+            --app-gradient-end: #38ef7d;
+            --app-alt-bg: rgba(17, 153, 142, 0.05);
+        }
+
+        .how-it-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, var(--app-gradient-start), var(--app-gradient-end));
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .step h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "速読ノベル",
+        "description": "テキストを意味の塊に分割し、画面を見るだけで読める速読小説アプリ。スクロール不要でノベルをすいすい読めます。",
+        "url": "https://normidar.com/apps/quickreader.html",
+        "image": "https://normidar.com/icon/apps/quickreader.png",
+        "applicationCategory": "BookApplication",
+        "operatingSystem": "ANDROID, IOS",
+        "author": {
+            "@type": "Person",
+            "name": "normidar"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "sameAs": [
+            "https://apps.apple.com/app/id6756515199",
+            "https://play.google.com/store/apps/details?id=com.normidar.quickreader"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">Coin Galaxy</a>
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">ホーム</a></li>
+                <li><a href="bookkeeping.html" data-i18n="stampBookkeeping">Stamp家計簿</a></li>
+                <li><a href="fditor.html" data-i18n="fditor">Fditor</a></li>
+                <li><a href="polygon.html" data-i18n="polygon">Polygon Wallet</a></li>
+                <li><a href="quickreader.html" data-i18n="quickreader">速読ノベル</a></li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="ja" onclick="changeLanguage('ja')">日本語</button>
+                <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="changeLanguage('zh')">中文</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="app-hero">
+            <div class="container">
+                <a href="../index.html" class="back-btn" data-i18n="backToHome">← ホームに戻る</a>
+                <div class="app-icon-large"><img src="../icon/apps/quickreader.png" alt="速読ノベル"></div>
+                <h1 data-i18n="quickreader">速読ノベル</h1>
+                <p data-i18n="quickreaderSubtitle">スクロール不要、画面を見るだけで読める速読アプリ</p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.quickreader" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">🤖</span>
+                        Google Play
+                    </a>
+                    <a href="https://apps.apple.com/app/id6756515199" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">📱</span>
+                        App Store
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 data-i18n="mainFeatures">主な機能</h2>
+                <div class="features-detailed">
+                    <div class="feature-detailed">
+                        <div class="icon" aria-hidden="true">⚡</div>
+                        <h3 data-i18n="chunkReading">チャンク分割速読表示</h3>
+                        <p data-i18n="chunkReadingDesc">テキストを意味の塊(チャンク)に自動分割し、前/現在/次の3段表示で読書速度を向上させます。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon" aria-hidden="true">📂</div>
+                        <h3 data-i18n="fileImport">ファイル読み込み・貼り付け</h3>
+                        <p data-i18n="fileImportDesc">txtファイルの読み込みや、テキストを直接貼り付けるだけで好きな小説をすぐに追加できます。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon" aria-hidden="true">🔍</div>
+                        <h3 data-i18n="naroIntegration">小説家になろう連携</h3>
+                        <p data-i18n="naroIntegrationDesc">「小説家になろう」の小説を検索してそのままダウンロード。お気に入りの作品をすぐに読み始められます。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon" aria-hidden="true">📚</div>
+                        <h3 data-i18n="bookshelf">本棚・続きから読む</h3>
+                        <p data-i18n="bookshelfDesc">読み込んだ本を本棚で一覧管理。前回の続きから、ワンタップで読書を再開できます。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon" aria-hidden="true">🎨</div>
+                        <h3 data-i18n="qrThemeSelection">テーマ・速度カスタマイズ</h3>
+                        <p data-i18n="qrThemeSelectionDesc">表示テーマや読書速度を自分好みに調整できる設定画面を搭載。</p>
+                    </div>
+                    <div class="feature-detailed">
+                        <div class="icon" aria-hidden="true">💰</div>
+                        <h3 data-i18n="completelyFree">完全無料</h3>
+                        <p data-i18n="completelyFreeDesc">すべての機能が完全無料でご利用いただけます。追加課金や隠れた費用は一切ありません。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <h2 data-i18n="howToUse">使い方</h2>
+                <div class="how-it-works">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3 data-i18n="qrStep1Title">本を追加</h3>
+                        <p data-i18n="qrStep1Desc">ファイル読み込み・テキスト貼り付け・なろう検索のいずれかで読みたい小説を追加します。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3 data-i18n="qrStep2Title">本棚から選択</h3>
+                        <p data-i18n="qrStep2Desc">本棚タブから読みたい本をタップして開きます。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3 data-i18n="qrStep3Title">画面を見るだけ</h3>
+                        <p data-i18n="qrStep3Desc">チャンク表示された文章を見ているだけで、スクロール不要でどんどん読み進められます。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3 data-i18n="qrStep4Title">続きから読む</h3>
+                        <p data-i18n="qrStep4Desc">アプリを閉じても読書位置が自動保存され、いつでも続きから再開できます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 data-i18n="screenshots">スクリーンショット</h2>
+                <div class="screenshots">
+                    <div class="screenshot-card">
+                        <img src="../screenshots/quickreader/3.png" alt="速読画面" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="qrMainScreen">速読画面</h3>
+                            <p data-i18n="qrMainScreenDesc">一度に一文だけ表示。スクロール不要で快適なテンポで読み進められます。</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/quickreader/1.png" alt="内蔵本棚" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="qrBookshelfScreen">豊富な内蔵本棚</h3>
+                            <p data-i18n="qrBookshelfScreenDesc">内蔵の本棚からすぐに読書を始められます。</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/quickreader/0.png" alt="続きを読む" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="qrNaroScreen">続きから読む</h3>
+                            <p data-i18n="qrNaroScreenDesc">前回の続きから、進捗バー付きでワンタップで再開できます。</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/quickreader/2.png" alt="テキスト貼り付け" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="qrSettingsScreen">テキスト貼り付け</h3>
+                            <p data-i18n="qrSettingsScreenDesc">テキストを貼り付けるだけで、すぐに速読を開始できます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container" style="text-align: center;">
+                <h2 data-i18n="downloadNow">今すぐダウンロード</h2>
+                <p style="color: white; font-size: 1.2rem; margin-bottom: 2rem;" data-i18n="quickreaderDownloadMessage">
+                    速読ノベルで、スクロール不要のサクサク読書を始めませんか？
+                </p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.quickreader" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">🤖</span>
+                        Google Play
+                    </a>
+                    <a href="https://apps.apple.com/app/id6756515199" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">📱</span>
+                        App Store
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="company-info">
+                <div class="company-name">normidar</div>
+                <p data-i18n="companyDesc">日常生活を豊かにするアプリケーションの開発</p>
+            </div>
+            <p data-i18n="copyright">&copy; 2024 normidar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/localization.js"></script>
+</body>
+</html>

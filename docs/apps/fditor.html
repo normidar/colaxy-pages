@@ -8,110 +8,22 @@
     <meta property="og:title" content="Fditor - Flutter AI Editor">
     <meta property="og:description" content="AI技術を活用したFlutter開発エディター">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://normidar.github.io/colaxy/icon/apps/fditor.png">
+    <link rel="canonical" href="https://normidar.com/apps/fditor.html">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://normidar.com/icon/apps/fditor.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Fditor - Flutter AI Editor">
     <meta name="twitter:description" content="AI技術を活用したFlutter開発エディター">
-    <meta name="twitter:image" content="https://normidar.github.io/colaxy/icon/apps/fditor.png">
+    <meta name="twitter:image" content="https://normidar.com/icon/apps/fditor.png">
     <link rel="apple-touch-icon" href="../icon/apps/fditor.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Roboto+Mono&display=swap">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../icon/apps/fditor.png" type="image/png">
     <link rel="icon" href="../icon/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0a0a1a">
     <style>
-        .app-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 6rem 0 4rem;
-            text-align: center;
-        }
-
-        .app-icon-large {
-            font-size: 6rem;
-            margin-bottom: 2rem;
-        }
-
-        .app-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .app-hero p {
-            font-size: 1.5rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-        }
-
-        .download-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .download-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .section {
-            padding: 4rem 0;
-        }
-
-        .section-alt {
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: white;
-        }
-
-        .features-detailed {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .feature-detailed {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        .feature-detailed .icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-detailed h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-detailed p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
         .code-example {
             background: rgba(0, 0, 0, 0.3);
             border-radius: 10px;
@@ -132,48 +44,6 @@
 
         .code-example .string {
             color: #e6db74;
-        }
-
-        .screenshots {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .screenshot-placeholder {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 3rem;
-            text-align: center;
-            color: white;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 2px dashed rgba(255, 255, 255, 0.3);
-        }
-
-        .screenshot-placeholder .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-bottom: 2rem;
-            transition: all 0.3s;
-        }
-
-        .back-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
         }
 
         .ai-features {
@@ -199,38 +69,32 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .benefit {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            color: white;
-        }
-
-        .benefit .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .app-hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .download-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
     </style>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Fditor - Flutter AI Editor",
+        "description": "AI技術を活用したFlutter開発エディター。コード補完、エラー修正、最適化提案など、開発を強力にサポート。",
+        "url": "https://normidar.com/apps/fditor.html",
+        "image": "https://normidar.com/icon/apps/fditor.png",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "ANDROID, IOS",
+        "author": {
+            "@type": "Person",
+            "name": "normidar"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "sameAs": [
+            "https://apps.apple.com/app/id6746962617",
+            "https://play.google.com/store/apps/details?id=com.normidar.fditor"
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -241,6 +105,7 @@
                 <li><a href="bookkeeping.html" data-i18n="stampBookkeeping">Stamp家計簿</a></li>
                 <li><a href="fditor.html" data-i18n="fditor">Fditor</a></li>
                 <li><a href="polygon.html" data-i18n="polygon">Polygon Wallet</a></li>
+                <li><a href="quickreader.html" data-i18n="quickreader">速読ノベル</a></li>
             </ul>
             <div class="language-selector">
                 <button class="lang-btn active" data-lang="ja" onclick="changeLanguage('ja')">日本語</button>
@@ -254,16 +119,16 @@
         <section class="app-hero">
             <div class="container">
                 <a href="../index.html" class="back-btn" data-i18n="backToHome">← ホームに戻る</a>
-                <div class="app-icon-large"><img src="../icon/apps/fditor.png" alt="Fditor" style="width: 120px; height: 120px; border-radius: 25px;"></div>
+                <div class="app-icon-large"><img src="../icon/apps/fditor.png" alt="Fditor"></div>
                 <h1 data-i18n="fditor">Fditor</h1>
                 <p data-i18n="fditorSubtitle">Flutter AI Editor - AI技術でFlutter開発を革新</p>
                 <div class="download-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.normidar.fditor" class="download-btn" target="_blank">
-                        <span>🤖</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.fditor" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">🤖</span>
                         Google Play
                     </a>
-                    <a href="https://apps.apple.com/app/id6746962617" class="download-btn" target="_blank">
-                        <span>📱</span>
+                    <a href="https://apps.apple.com/app/id6746962617" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">📱</span>
                         App Store
                     </a>
                 </div>
@@ -275,7 +140,7 @@
                 <h2 data-i18n="aiFeatures">AI支援機能</h2>
                 <div class="ai-features">
                     <div class="ai-feature">
-                        <div class="icon">🔑</div>
+                        <div class="icon" aria-hidden="true">🔑</div>
                         <h3 data-i18n="claudeIntegration">Claude API連携</h3>
                         <p data-i18n="claudeIntegrationDesc">Claudeのキーを入力すれば機能が使えるようになります。強力なAI技術をFlutter開発に活用できます。</p>
                         <div class="code-example">
@@ -289,7 +154,7 @@
                         </div>
                     </div>
                     <div class="ai-feature">
-                        <div class="icon">📱</div>
+                        <div class="icon" aria-hidden="true">📱</div>
                         <h3 data-i18n="inAppPreview">アプリ内UI確認</h3>
                         <p data-i18n="inAppPreviewDesc">生成されたUIをアプリ内で直接確認できます。コードの変更結果をリアルタイムで視覚的に確認しながら開発を進められます。</p>
                         <div class="code-example">
@@ -311,22 +176,22 @@
                 <h2 data-i18n="mainFeatures">主な機能</h2>
                 <div class="features-detailed">
                     <div class="feature-detailed">
-                        <div class="icon">🎨</div>
+                        <div class="icon" aria-hidden="true">🎨</div>
                         <h3 data-i18n="simpleUI">シンプルな画面</h3>
                         <p data-i18n="simpleUIDesc">直感的で使いやすいシンプルなデザイン。複雑な操作は一切不要で、誰でも簡単にFlutter開発ができます。</p>
                     </div>
                     <div class="feature-detailed">
-                        <div class="icon">💰</div>
+                        <div class="icon" aria-hidden="true">💰</div>
                         <h3 data-i18n="completelyFree">完全無料</h3>
                         <p data-i18n="completelyFreeDesc">すべての機能が完全無料でご利用いただけます。追加課金や隠れた費用は一切ありません。</p>
                     </div>
                     <div class="feature-detailed">
-                        <div class="icon">🎨</div>
+                        <div class="icon" aria-hidden="true">🎨</div>
                         <h3 data-i18n="themeSelection">テーマ選択</h3>
                         <p data-i18n="themeSelectionDesc">お好みに合わせてテーマを選択可能。自分らしいカスタマイズで快適な開発環境を構築できます。</p>
                     </div>
                     <div class="feature-detailed">
-                        <div class="icon">🌍</div>
+                        <div class="icon" aria-hidden="true">🌍</div>
                         <h3 data-i18n="multilingual">多言語対応</h3>
                         <p data-i18n="multilingualDesc">日本語、英語、中国語に対応。世界中の開発者が自分の言語で快適に使用できます。</p>
                     </div>
@@ -339,22 +204,22 @@
                 <h2 data-i18n="developmentEfficiency">開発効率の向上</h2>
                 <div class="benefits">
                     <div class="benefit">
-                        <div class="icon">⏰</div>
+                        <div class="icon" aria-hidden="true">⏰</div>
                         <h3 data-i18n="timeReduction">開発時間短縮</h3>
                         <p data-i18n="timeReductionDesc">最大70%の開発時間短縮を実現</p>
                     </div>
                     <div class="benefit">
-                        <div class="icon">🐛</div>
+                        <div class="icon" aria-hidden="true">🐛</div>
                         <h3 data-i18n="bugReduction">バグ削減</h3>
                         <p data-i18n="bugReductionDesc">AIによる事前チェックでバグを80%削減</p>
                     </div>
                     <div class="benefit">
-                        <div class="icon">📈</div>
+                        <div class="icon" aria-hidden="true">📈</div>
                         <h3 data-i18n="qualityImprovement">品質向上</h3>
                         <p data-i18n="qualityImprovementDesc">ベストプラクティスの自動適用</p>
                     </div>
                     <div class="benefit">
-                        <div class="icon">🎓</div>
+                        <div class="icon" aria-hidden="true">🎓</div>
                         <h3 data-i18n="learningSupport">学習支援</h3>
                         <p data-i18n="learningSupportDesc">AIが開発パターンを教えて学習を促進</p>
                     </div>
@@ -366,25 +231,33 @@
             <div class="container">
                 <h2 data-i18n="screenshots">スクリーンショット</h2>
                 <div class="screenshots">
-                    <div class="screenshot-placeholder">
-                        <div class="icon">💻</div>
-                        <h3 data-i18n="mainEditor">メインエディター</h3>
-                        <p data-i18n="mainEditorDesc">AI支援付きコードエディター</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/fditor/0.png" alt="プロジェクト管理" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="mainEditor">AI搭載Flutter UIビルダー</h3>
+                            <p data-i18n="mainEditorDesc">保存したプロジェクトを一覧管理し、タップしてすぐに編集を再開できます。</p>
+                        </div>
                     </div>
-                    <div class="screenshot-placeholder">
-                        <div class="icon">🤖</div>
-                        <h3 data-i18n="aiAssistant">AI アシスタント</h3>
-                        <p data-i18n="aiAssistantDesc">リアルタイムコード提案</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/fditor/2.png" alt="コードエディタ&プレビュー" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="aiAssistant">コードエディタ&amp;プレビュー</h3>
+                            <p data-i18n="aiAssistantDesc">「AIでコード生成」にプロンプトを送るだけでコードを生成・編集できます。</p>
+                        </div>
                     </div>
-                    <div class="screenshot-placeholder">
-                        <div class="icon">📊</div>
-                        <h3 data-i18n="performanceAnalysis">パフォーマンス分析</h3>
-                        <p data-i18n="performanceAnalysisDesc">コード品質とパフォーマンス監視</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/fditor/3.png" alt="テーマ選択" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="performanceAnalysis">テーマ選択</h3>
+                            <p data-i18n="performanceAnalysisDesc">好みのカラーテーマをタップ一つで切り替えられます。</p>
+                        </div>
                     </div>
-                    <div class="screenshot-placeholder">
-                        <div class="icon">🎨</div>
-                        <h3 data-i18n="uiDesigner">UI デザイナー</h3>
-                        <p data-i18n="uiDesignerDesc">ビジュアルUIデザインツール</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/fditor/1.png" alt="カスタマイズ設定" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="uiDesigner">カスタマイズ設定</h3>
+                            <p data-i18n="uiDesignerDesc">テーマ・言語・AI設定など、アプリ全体をカスタマイズできます。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -397,12 +270,12 @@
                     Fditorで、AI支援によるFlutter開発の新しい体験を始めませんか？
                 </p>
                 <div class="download-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.normidar.fditor" class="download-btn" target="_blank">
-                        <span>🤖</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.fditor" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">🤖</span>
                         Google Play
                     </a>
-                    <a href="https://apps.apple.com/app/id6746962617" class="download-btn" target="_blank">
-                        <span>📱</span>
+                    <a href="https://apps.apple.com/app/id6746962617" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">📱</span>
                         App Store
                     </a>
                 </div>

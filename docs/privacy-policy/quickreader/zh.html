@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策 - MoneyMate</title>
+    <title>隐私政策 - 速读小说</title>
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/marked.min.js"></script>
     <style>
@@ -19,11 +19,11 @@
 <body>
     <div class="container" style="max-width: 800px; margin: 0 auto;">
         <a href="../../index.html" class="logo" style="display: inline-block; margin-bottom: 1rem;">Coin Galaxy</a>
-        <a href="../../apps/bookkeeping.html" class="back-btn">← 返回应用页面</a>
+        <a href="../../apps/quickreader.html" class="back-btn">← 返回应用页面</a>
     </div>
     <div id="content" class="markdown-body"></div>
     <script>
-        fetch('../md/bookkeeping/zh.md')
+        fetch('../md/quickreader/zh.md')
             .then(response => response.text())
             .then(text => {
                 document.getElementById('content').innerHTML = marked.parse(text);

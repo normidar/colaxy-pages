@@ -8,113 +8,26 @@
     <meta property="og:title" content="Polygon Wallet - Coin Galaxy">
     <meta property="og:description" content="言葉だけで簡単にウォレットを作成できるPolygon専用ウォレット">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://normidar.github.io/colaxy/icon/apps/polygon.png">
+    <link rel="canonical" href="https://normidar.com/apps/polygon.html">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://normidar.com/icon/apps/polygon.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Polygon Wallet">
     <meta name="twitter:description" content="言葉だけで簡単にウォレットを作成できるPolygon専用ウォレット">
-    <meta name="twitter:image" content="https://normidar.github.io/colaxy/icon/apps/polygon.png">
+    <meta name="twitter:image" content="https://normidar.com/icon/apps/polygon.png">
     <link rel="apple-touch-icon" href="../icon/apps/polygon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Roboto+Mono&display=swap">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../icon/apps/polygon.png" type="image/png">
     <link rel="icon" href="../icon/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0a0a1a">
     <style>
-        .app-hero {
-            background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
-            color: white;
-            padding: 6rem 0 4rem;
-            text-align: center;
-        }
-
-        .app-icon-large {
-            font-size: 6rem;
-            margin-bottom: 2rem;
-        }
-
-        .app-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .app-hero p {
-            font-size: 1.5rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-        }
-
-        .download-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .download-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .section {
-            padding: 4rem 0;
-        }
-
-        .section-alt {
-            background: rgba(139, 92, 246, 0.05);
-        }
-
-        .section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: white;
-        }
-
-        .features-detailed {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .feature-detailed {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            color: white;
-            transition: transform 0.3s;
-        }
-
-        .feature-detailed:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-detailed .icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-detailed h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-detailed p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+        :root {
+            --app-gradient-start: #8B5CF6;
+            --app-gradient-end: #6366F1;
+            --app-alt-bg: rgba(139, 92, 246, 0.05);
         }
 
         .security-features {
@@ -141,80 +54,32 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
-        .screenshots {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .screenshot-placeholder {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 3rem;
-            text-align: center;
-            color: white;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 2px dashed rgba(255, 255, 255, 0.3);
-        }
-
-        .screenshot-placeholder .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-bottom: 2rem;
-            transition: all 0.3s;
-        }
-
-        .back-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .benefit {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            color: white;
-        }
-
-        .benefit .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .app-hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .download-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
     </style>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Polygon Wallet",
+        "description": "言葉だけで簡単にウォレットを作成できるPolygon専用ウォレット。シンプルで安全なウォレット管理。",
+        "url": "https://normidar.com/apps/polygon.html",
+        "image": "https://normidar.com/icon/apps/polygon.png",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "ANDROID, IOS",
+        "author": {
+            "@type": "Person",
+            "name": "normidar"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "sameAs": [
+            "https://apps.apple.com/app/id6751015869",
+            "https://play.google.com/store/apps/details?id=com.normidar.polygon"
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -225,6 +90,7 @@
                 <li><a href="bookkeeping.html" data-i18n="stampBookkeeping">Stamp家計簿</a></li>
                 <li><a href="fditor.html" data-i18n="fditor">Fditor</a></li>
                 <li><a href="polygon.html" data-i18n="polygon">Polygon Wallet</a></li>
+                <li><a href="quickreader.html" data-i18n="quickreader">速読ノベル</a></li>
             </ul>
             <div class="language-selector">
                 <button class="lang-btn active" data-lang="ja" onclick="changeLanguage('ja')">日本語</button>
@@ -238,16 +104,16 @@
         <section class="app-hero">
             <div class="container">
                 <a href="../index.html" class="back-btn" data-i18n="backToHome">← ホームに戻る</a>
-                <div class="app-icon-large"><img src="../icon/apps/polygon.png" alt="Polygon Wallet" style="width: 120px; height: 120px; border-radius: 25px;"></div>
+                <div class="app-icon-large"><img src="../icon/apps/polygon.png" alt="Polygon Wallet"></div>
                 <h1 data-i18n="polygon">Polygon Wallet</h1>
                 <p data-i18n="polygonSubtitle">自分だけが知る文書や言葉でウォレットを作成 - シンプルで安全なPolygonウォレット</p>
                 <div class="download-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.normidar.polygon" class="download-btn" target="_blank">
-                        <span>🤖</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.polygon" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">🤖</span>
                         Google Play
                     </a>
-                    <a href="https://apps.apple.com/app/id6751015869" class="download-btn" target="_blank">
-                        <span>📱</span>
+                    <a href="https://apps.apple.com/app/id6751015869" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">📱</span>
                         App Store
                     </a>
                 </div>
@@ -259,17 +125,17 @@
                 <h2 data-i18n="mainFeatures">主な機能</h2>
                 <div class="features-detailed">
                     <div class="feature-detailed">
-                        <div class="icon">📝</div>
+                        <div class="icon" aria-hidden="true">📝</div>
                         <h3 data-i18n="voiceWalletCreation">自分だけが知る文書や言葉で作成</h3>
                         <p data-i18n="voiceWalletCreationDesc">複雑な設定は不要。自分だけが知っている文書や言葉を使って簡単にウォレットを作成できます。初心者でも迷わずに始められます。</p>
                     </div>
                     <div class="feature-detailed">
-                        <div class="icon">⛓️</div>
+                        <div class="icon" aria-hidden="true">⛓️</div>
                         <h3 data-i18n="polygonOnly">Polygon専用ウォレット</h3>
                         <p data-i18n="polygonOnlyDesc">Polygonネットワーク専用に最適化されたウォレット。高速で低コストな取引を実現します。</p>
                     </div>
                     <div class="feature-detailed">
-                        <div class="icon">🔐</div>
+                        <div class="icon" aria-hidden="true">🔐</div>
                         <h3 data-i18n="easySecureLogin">簡単で安全なログイン</h3>
                         <p data-i18n="easySecureLoginDesc">自分のウォレットに簡単にログインでき、高いセキュリティレベルで資産を保護します。</p>
                     </div>
@@ -282,17 +148,17 @@
                 <h2 data-i18n="securityFeatures">セキュリティ機能</h2>
                 <div class="security-features">
                     <div class="security-feature">
-                        <div class="icon">🔒</div>
+                        <div class="icon" aria-hidden="true">🔒</div>
                         <h3 data-i18n="localStorage">ローカル保存</h3>
                         <p data-i18n="localStorageDesc">すべてのウォレット情報はデバイスにローカル保存され、外部サーバーに送信されることはありません。</p>
                     </div>
                     <div class="security-feature">
-                        <div class="icon">🛡️</div>
+                        <div class="icon" aria-hidden="true">🛡️</div>
                         <h3 data-i18n="encryption">暗号化保護</h3>
                         <p data-i18n="encryptionDesc">業界標準の暗号化技術により、プライベートキーや機密情報を安全に保護します。</p>
                     </div>
                     <div class="security-feature">
-                        <div class="icon">🔑</div>
+                        <div class="icon" aria-hidden="true">🔑</div>
                         <h3 data-i18n="privateKeyControl">プライベートキー管理</h3>
                         <p data-i18n="privateKeyControlDesc">プライベートキーは常にユーザーのデバイス内に保持され、外部に送信されることはありません。</p>
                     </div>
@@ -305,22 +171,22 @@
                 <h2 data-i18n="whyPolygonWallet">なぜPolygon Walletなのか？</h2>
                 <div class="benefits">
                     <div class="benefit">
-                        <div class="icon">⚡</div>
+                        <div class="icon" aria-hidden="true">⚡</div>
                         <h3 data-i18n="fastTransactions">高速取引</h3>
                         <p data-i18n="fastTransactionsDesc">Polygonネットワークの高速性を活かした迅速な取引処理</p>
                     </div>
                     <div class="benefit">
-                        <div class="icon">💰</div>
+                        <div class="icon" aria-hidden="true">💰</div>
                         <h3 data-i18n="lowFees">低コスト</h3>
                         <p data-i18n="lowFeesDesc">取引手数料が非常に低く、コスト効率の良い運用が可能</p>
                     </div>
                     <div class="benefit">
-                        <div class="icon">🌐</div>
+                        <div class="icon" aria-hidden="true">🌐</div>
                         <h3 data-i18n="polygonEcosystem">Polygonエコシステム</h3>
                         <p data-i18n="polygonEcosystemDesc">Polygonネットワーク上の豊富なDAppsやサービスにアクセス</p>
                     </div>
                     <div class="benefit">
-                        <div class="icon">🎯</div>
+                        <div class="icon" aria-hidden="true">🎯</div>
                         <h3 data-i18n="userFriendly">ユーザーフレンドリー</h3>
                         <p data-i18n="userFriendlyDesc">シンプルで直感的なインターフェースで、誰でも簡単に使用可能</p>
                     </div>
@@ -332,25 +198,33 @@
             <div class="container">
                 <h2 data-i18n="screenshots">スクリーンショット</h2>
                 <div class="screenshots">
-                    <div class="screenshot-placeholder">
-                        <div class="icon">💼</div>
-                        <h3 data-i18n="walletCreation">ウォレット作成</h3>
-                        <p data-i18n="walletCreationDesc">自分だけが知る文書や言葉で簡単にウォレットを作成</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/polygon/4.png" alt="ウォレットを生成またはインポート" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="walletCreation">ウォレットを生成またはインポート</h3>
+                            <p data-i18n="walletCreationDesc">安全な秘密鍵、または秘密の言葉・BIP39ニーモニックでウォレットを作成できます。</p>
+                        </div>
                     </div>
-                    <div class="screenshot-placeholder">
-                        <div class="icon">🔐</div>
-                        <h3 data-i18n="secureLogin">セキュアログイン</h3>
-                        <p data-i18n="secureLoginDesc">安全で簡単なログイン画面</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/polygon/5.png" alt="Polygon送金" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="secureLogin">簡単・安全な送金</h3>
+                            <p data-i18n="secureLoginDesc">QRコードをスキャン、またはアドレスを貼り付けるだけでPolygon送金が完了します。</p>
+                        </div>
                     </div>
-                    <div class="screenshot-placeholder">
-                        <div class="icon">📊</div>
-                        <h3 data-i18n="walletDashboard">ウォレットダッシュボード</h3>
-                        <p data-i18n="walletDashboardDesc">残高と取引履歴の確認</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/polygon/1.png" alt="ウォレット残高" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="walletDashboard">ウォレットダッシュボード</h3>
+                            <p data-i18n="walletDashboardDesc">残高の確認、送金・受取をワンタップで実行できます。</p>
+                        </div>
                     </div>
-                    <div class="screenshot-placeholder">
-                        <div class="icon">💸</div>
-                        <h3 data-i18n="transactionHistory">取引履歴</h3>
-                        <p data-i18n="transactionHistoryDesc">詳細な取引履歴の表示</p>
+                    <div class="screenshot-card">
+                        <img src="../screenshots/polygon/0.png" alt="取引履歴" loading="lazy">
+                        <div class="caption">
+                            <h3 data-i18n="transactionHistory">取引履歴</h3>
+                            <p data-i18n="transactionHistoryDesc">すべての送受金履歴を時系列で確認できます。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -363,12 +237,12 @@
                     Polygon Walletで、シンプルで安全なウォレット管理を始めませんか？
                 </p>
                 <div class="download-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.normidar.polygon" class="download-btn" target="_blank">
-                        <span>🤖</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.normidar.polygon" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">🤖</span>
                         Google Play
                     </a>
-                    <a href="https://apps.apple.com/app/id6751015869" class="download-btn" target="_blank">
-                        <span>📱</span>
+                    <a href="https://apps.apple.com/app/id6751015869" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">📱</span>
                         App Store
                     </a>
                 </div>

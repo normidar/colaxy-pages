@@ -95,14 +95,14 @@ const translations = {
         qualityImprovementDesc: "ベストプラクティスの自動適用",
         learningSupport: "学習支援",
         learningSupportDesc: "AIが開発パターンを教えて学習を促進",
-        mainEditor: "メインエディター",
-        mainEditorDesc: "AI支援付きコードエディター",
-        aiAssistant: "AI アシスタント",
-        aiAssistantDesc: "リアルタイムコード提案",
-        performanceAnalysis: "パフォーマンス分析",
-        performanceAnalysisDesc: "コード品質とパフォーマンス監視",
-        uiDesigner: "UI デザイナー",
-        uiDesignerDesc: "ビジュアルUIデザインツール",
+        mainEditor: "AI搭載Flutter UIビルダー",
+        mainEditorDesc: "保存したプロジェクトを一覧管理し、タップしてすぐに編集を再開できます。",
+        aiAssistant: "コードエディタ&プレビュー",
+        aiAssistantDesc: "「AIでコード生成」にプロンプトを送るだけでコードを生成・編集できます。",
+        performanceAnalysis: "テーマ選択",
+        performanceAnalysisDesc: "好みのカラーテーマをタップ一つで切り替えられます。",
+        uiDesigner: "カスタマイズ設定",
+        uiDesignerDesc: "テーマ・言語・AI設定など、アプリ全体をカスタマイズできます。",
         fditorDownloadMessage: "Fditorで、AI支援によるFlutter開発の新しい体験を始めませんか？",
         
         // Polygon固有の翻訳
@@ -131,15 +131,47 @@ const translations = {
         polygonEcosystemDesc: "Polygonネットワーク上の豊富なDAppsやサービスにアクセス",
         userFriendly: "ユーザーフレンドリー",
         userFriendlyDesc: "シンプルで直感的なインターフェースで、誰でも簡単に使用可能",
-        walletCreation: "ウォレット作成",
-        walletCreationDesc: "自分だけが知る文書や言葉で簡単にウォレットを作成",
-        secureLogin: "セキュアログイン",
-        secureLoginDesc: "安全で簡単なログイン画面",
+        walletCreation: "ウォレットを生成またはインポート",
+        walletCreationDesc: "安全な秘密鍵、または秘密の言葉・BIP39ニーモニックでウォレットを作成できます。",
+        secureLogin: "簡単・安全な送金",
+        secureLoginDesc: "QRコードをスキャン、またはアドレスを貼り付けるだけでPolygon送金が完了します。",
         walletDashboard: "ウォレットダッシュボード",
-        walletDashboardDesc: "残高と取引履歴の確認",
+        walletDashboardDesc: "残高の確認、送金・受取をワンタップで実行できます。",
         transactionHistory: "取引履歴",
-        transactionHistoryDesc: "詳細な取引履歴の表示",
-        polygonDownloadMessage: "Polygon Walletで、シンプルで安全なウォレット管理を始めませんか？"
+        transactionHistoryDesc: "すべての送受金履歴を時系列で確認できます。",
+        polygonDownloadMessage: "Polygon Walletで、シンプルで安全なウォレット管理を始めませんか？",
+
+        // QuickReader固有の翻訳
+        quickreader: "速読ノベル",
+        quickreaderDesc: "テキストを意味の塊に分割し、画面を見るだけで読める速読小説アプリ。スクロール不要でノベルをすいすい読めます。",
+        quickreaderSubtitle: "スクロール不要、画面を見るだけで読める速読アプリ",
+        chunkReading: "チャンク分割速読表示",
+        chunkReadingDesc: "テキストを意味の塊(チャンク)に自動分割し、前/現在/次の3段表示で読書速度を向上させます。",
+        fileImport: "ファイル読み込み・貼り付け",
+        fileImportDesc: "txtファイルの読み込みや、テキストを直接貼り付けるだけで好きな小説をすぐに追加できます。",
+        naroIntegration: "小説家になろう連携",
+        naroIntegrationDesc: "「小説家になろう」の小説を検索してそのままダウンロード。お気に入りの作品をすぐに読み始められます。",
+        bookshelf: "本棚・続きから読む",
+        bookshelfDesc: "読み込んだ本を本棚で一覧管理。前回の続きから、ワンタップで読書を再開できます。",
+        qrThemeSelection: "テーマ・速度カスタマイズ",
+        qrThemeSelectionDesc: "表示テーマや読書速度を自分好みに調整できる設定画面を搭載。",
+        qrStep1Title: "本を追加",
+        qrStep1Desc: "ファイル読み込み・テキスト貼り付け・なろう検索のいずれかで読みたい小説を追加します。",
+        qrStep2Title: "本棚から選択",
+        qrStep2Desc: "本棚タブから読みたい本をタップして開きます。",
+        qrStep3Title: "画面を見るだけ",
+        qrStep3Desc: "チャンク表示された文章を見ているだけで、スクロール不要でどんどん読み進められます。",
+        qrStep4Title: "続きから読む",
+        qrStep4Desc: "アプリを閉じても読書位置が自動保存され、いつでも続きから再開できます。",
+        qrMainScreen: "速読画面",
+        qrMainScreenDesc: "一度に一文だけ表示。スクロール不要で快適なテンポで読み進められます。",
+        qrBookshelfScreen: "豊富な内蔵本棚",
+        qrBookshelfScreenDesc: "内蔵の本棚からすぐに読書を始められます。",
+        qrNaroScreen: "続きから読む",
+        qrNaroScreenDesc: "前回の続きから、進捗バー付きでワンタップで再開できます。",
+        qrSettingsScreen: "テキスト貼り付け",
+        qrSettingsScreenDesc: "テキストを貼り付けるだけで、すぐに速読を開始できます。",
+        quickreaderDownloadMessage: "速読ノベルで、スクロール不要のサクサク読書を始めませんか？"
     },
     en: {
         // Header
@@ -236,14 +268,14 @@ const translations = {
         qualityImprovementDesc: "Automatic application of best practices",
         learningSupport: "Learning Support",
         learningSupportDesc: "AI teaches development patterns to promote learning",
-        mainEditor: "Main Editor",
-        mainEditorDesc: "AI-powered code editor",
-        aiAssistant: "AI Assistant",
-        aiAssistantDesc: "Real-time code suggestions",
-        performanceAnalysis: "Performance Analysis",
-        performanceAnalysisDesc: "Code quality and performance monitoring",
-        uiDesigner: "UI Designer",
-        uiDesignerDesc: "Visual UI design tools",
+        mainEditor: "AI-Powered Flutter UI Builder",
+        mainEditorDesc: "Manage your saved projects in one list and jump right back into editing with a tap.",
+        aiAssistant: "Code Editor & Preview",
+        aiAssistantDesc: "Generate and edit code instantly by sending a prompt to \"Generate with AI\".",
+        performanceAnalysis: "Theme Selection",
+        performanceAnalysisDesc: "Switch between color themes with a single tap.",
+        uiDesigner: "Customization Settings",
+        uiDesignerDesc: "Customize the whole app — theme, language, and AI settings — in one place.",
         fditorDownloadMessage: "Start a new Flutter development experience with AI support using Fditor?",
         
         // Polygon-specific translations
@@ -272,15 +304,47 @@ const translations = {
         polygonEcosystemDesc: "Access to rich DApps and services on the Polygon network",
         userFriendly: "User-Friendly",
         userFriendlyDesc: "Simple and intuitive interface that anyone can easily use",
-        walletCreation: "Wallet Creation",
-        walletCreationDesc: "Create wallets easily with documents or words only you know",
-        secureLogin: "Secure Login",
-        secureLoginDesc: "Safe and easy login screen",
+        walletCreation: "Generate or Import a Wallet",
+        walletCreationDesc: "Create a wallet with a secure private key, or with your own secret words / a BIP39 mnemonic.",
+        secureLogin: "Easy, Secure Sending",
+        secureLoginDesc: "Send Polygon by scanning a QR code or pasting an address — that's it.",
         walletDashboard: "Wallet Dashboard",
-        walletDashboardDesc: "View balance and transaction history",
+        walletDashboardDesc: "Check your balance and send or receive with a single tap.",
         transactionHistory: "Transaction History",
-        transactionHistoryDesc: "Display detailed transaction history",
-        polygonDownloadMessage: "Start simple and secure wallet management with Polygon Wallet?"
+        transactionHistoryDesc: "See every transaction in chronological order.",
+        polygonDownloadMessage: "Start simple and secure wallet management with Polygon Wallet?",
+
+        // QuickReader-specific translations
+        quickreader: "QuickReader",
+        quickreaderDesc: "A speed-reading novel app that splits text into meaningful chunks so you can read just by looking at the screen — no scrolling needed.",
+        quickreaderSubtitle: "No scrolling — just look at the screen and read",
+        chunkReading: "Chunked Speed-Reading Display",
+        chunkReadingDesc: "Automatically splits text into meaningful chunks and shows the previous, current, and next chunk in a 3-line view to boost your reading speed.",
+        fileImport: "Import Files or Paste Text",
+        fileImportDesc: "Add any novel instantly by importing a .txt file or simply pasting text directly.",
+        naroIntegration: "Syosetsu (Narou) Integration",
+        naroIntegrationDesc: "Search and download novels from Japan's popular \"Shousetsuka ni Narou\" site right in the app.",
+        bookshelf: "Bookshelf & Continue Reading",
+        bookshelfDesc: "Manage all your imported books on one bookshelf and resume right where you left off with a single tap.",
+        qrThemeSelection: "Customizable Theme & Speed",
+        qrThemeSelectionDesc: "A settings screen lets you tune the display theme and reading speed to your liking.",
+        qrStep1Title: "Add a Book",
+        qrStep1Desc: "Add a novel by importing a file, pasting text, or searching Shousetsuka ni Narou.",
+        qrStep2Title: "Pick from Your Bookshelf",
+        qrStep2Desc: "Tap a book from the bookshelf tab to open it.",
+        qrStep3Title: "Just Look at the Screen",
+        qrStep3Desc: "Read the chunked text simply by looking — no scrolling required.",
+        qrStep4Title: "Resume Anytime",
+        qrStep4Desc: "Your reading position is saved automatically, so you can pick up right where you left off.",
+        qrMainScreen: "Speed-Reading Screen",
+        qrMainScreenDesc: "Shows just one sentence at a time — no scrolling, a comfortable reading pace.",
+        qrBookshelfScreen: "A Rich Built-In Bookshelf",
+        qrBookshelfScreenDesc: "Start reading right away from the built-in bookshelf.",
+        qrNaroScreen: "Resume Where You Left Off",
+        qrNaroScreenDesc: "Pick up your last book with one tap, progress bar included.",
+        qrSettingsScreen: "Paste Text",
+        qrSettingsScreenDesc: "Paste any text and start speed-reading immediately.",
+        quickreaderDownloadMessage: "Start scroll-free, effortless reading with QuickReader?"
     },
     zh: {
         // ヘッダー
@@ -377,14 +441,14 @@ const translations = {
         qualityImprovementDesc: "自动应用最佳实践",
         learningSupport: "学习支持",
         learningSupportDesc: "AI教授开发模式促进学习",
-        mainEditor: "主编辑器",
-        mainEditorDesc: "AI辅助代码编辑器",
-        aiAssistant: "AI助手",
-        aiAssistantDesc: "实时代码建议",
-        performanceAnalysis: "性能分析",
-        performanceAnalysisDesc: "代码质量和性能监控",
-        uiDesigner: "UI设计器",
-        uiDesignerDesc: "可视化UI设计工具",
+        mainEditor: "AI驱动的Flutter UI构建器",
+        mainEditorDesc: "在项目列表中管理已保存的项目，点击即可继续编辑。",
+        aiAssistant: "代码编辑器与预览",
+        aiAssistantDesc: "只需向「AI生成代码」发送提示词，即可生成并编辑代码。",
+        performanceAnalysis: "主题选择",
+        performanceAnalysisDesc: "只需一键即可切换喜欢的配色主题。",
+        uiDesigner: "自定义设置",
+        uiDesignerDesc: "在一处集中管理主题、语言和AI设置等应用全局自定义项。",
         fditorDownloadMessage: "用Fditor开始AI辅助Flutter开发的新体验？",
         
         // Polygon特定翻译
@@ -413,20 +477,52 @@ const translations = {
         polygonEcosystemDesc: "访问Polygon网络上丰富的DApps和服务",
         userFriendly: "用户友好",
         userFriendlyDesc: "简单直观的界面，任何人都能轻松使用",
-        walletCreation: "钱包创建",
-        walletCreationDesc: "用只有您知道的文档或词语轻松创建钱包",
-        secureLogin: "安全登录",
-        secureLoginDesc: "安全简单的登录界面",
+        walletCreation: "生成或导入钱包",
+        walletCreationDesc: "使用安全的私钥，或使用您自己的密语/BIP39助记词创建钱包。",
+        secureLogin: "简单安全的转账",
+        secureLoginDesc: "扫描二维码或粘贴地址，即可完成Polygon转账。",
         walletDashboard: "钱包仪表板",
-        walletDashboardDesc: "查看余额和交易历史",
+        walletDashboardDesc: "查看余额，一键完成转账或收款。",
         transactionHistory: "交易历史",
-        transactionHistoryDesc: "显示详细的交易历史",
-        polygonDownloadMessage: "用Polygon钱包开始简单安全的钱包管理？"
+        transactionHistoryDesc: "按时间顺序查看所有转账收款记录。",
+        polygonDownloadMessage: "用Polygon钱包开始简单安全的钱包管理？",
+
+        // QuickReader特定翻译
+        quickreader: "速读小说",
+        quickreaderDesc: "将文本自动拆分为语义片段，只需盯着屏幕就能阅读的速读小说应用，无需滚动。",
+        quickreaderSubtitle: "无需滚动，只需盯着屏幕即可阅读",
+        chunkReading: "分块速读显示",
+        chunkReadingDesc: "自动将文本拆分为语义片段，以\"上一段/当前段/下一段\"三行显示来提升阅读速度。",
+        fileImport: "导入文件或粘贴文本",
+        fileImportDesc: "导入txt文件或直接粘贴文本，即可立即添加你喜欢的小说。",
+        naroIntegration: "「成为小说家」联动",
+        naroIntegrationDesc: "在应用内搜索并下载日本人气小说网站「成为小说家」上的作品。",
+        bookshelf: "书架与继续阅读",
+        bookshelfDesc: "在书架中统一管理已导入的书籍，一键从上次阅读的位置继续阅读。",
+        qrThemeSelection: "主题与速度自定义",
+        qrThemeSelectionDesc: "设置界面可自由调整显示主题和阅读速度。",
+        qrStep1Title: "添加书籍",
+        qrStep1Desc: "通过导入文件、粘贴文本或搜索「成为小说家」来添加想读的小说。",
+        qrStep2Title: "从书架中选择",
+        qrStep2Desc: "在书架标签页中点击想读的书籍即可打开。",
+        qrStep3Title: "只需盯着屏幕",
+        qrStep3Desc: "只需查看分块显示的文本，无需滚动即可持续阅读。",
+        qrStep4Title: "随时继续阅读",
+        qrStep4Desc: "阅读进度会自动保存，随时可以从上次的位置继续阅读。",
+        qrMainScreen: "速读界面",
+        qrMainScreenDesc: "一次只显示一句话，无需滚动，阅读节奏舒适。",
+        qrBookshelfScreen: "丰富的内置书架",
+        qrBookshelfScreenDesc: "从内置书架即可立即开始阅读。",
+        qrNaroScreen: "继续上次的阅读",
+        qrNaroScreenDesc: "带进度条一键继续上次阅读的书籍。",
+        qrSettingsScreen: "粘贴文本",
+        qrSettingsScreenDesc: "粘贴文本即可立即开始速读。",
+        quickreaderDownloadMessage: "用速读小说开始无需滚动的畅快阅读吧？"
     }
 };
 
-// 現在の言語を取得（デフォルトは英語）
-let currentLanguage = localStorage.getItem('language') || 'en';
+// 現在の言語を取得（デフォルトは日本語 - HTMLの初期表示・lang属性と一致させる）
+let currentLanguage = localStorage.getItem('language') || 'ja';
 
 // 言語を変更する関数
 function changeLanguage(lang) {
@@ -438,7 +534,7 @@ function changeLanguage(lang) {
 // コンテンツを更新する関数
 function updateContent() {
     const t = translations[currentLanguage];
-    
+
     // ヘッダー
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
@@ -446,13 +542,15 @@ function updateContent() {
             element.textContent = t[key];
         }
     });
-    
+
+    // スクリーンリーダー・SEO向けに実際の表示言語とlang属性を一致させる
+    document.documentElement.lang = currentLanguage;
+
     // 言語選択ボタンのアクティブ状態を更新
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === currentLanguage) {
-            btn.classList.add('active');
-        }
+        const isActive = btn.getAttribute('data-lang') === currentLanguage;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-current', isActive ? 'true' : 'false');
     });
 }
 

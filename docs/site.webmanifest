@@ -1,0 +1,26 @@
+{
+    "name": "Coin Galaxy - normidar",
+    "short_name": "Coin Galaxy",
+    "description": "日常生活をより便利にする革新的なアプリケーション群 - Stamp家計簿、Fditor、Polygon Wallet、速読ノベル",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a1a",
+    "theme_color": "#0a0a1a",
+    "icons": [
+        {
+            "src": "/icon/favicon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon/og-image.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
