@@ -1,6 +1,6 @@
 # Política de Privacidade
 
-_Última atualização: 22 de janeiro de 2025_
+_Última atualização: 18 de setembro de 2026_
 
 Obrigado por usar o **Polygon wallet** ("o Aplicativo"). Estamos comprometidos em proteger sua privacidade. Esta Política de Privacidade explica como suas informações são coletadas, usadas e divulgadas quando você usa o Aplicativo.
 
@@ -11,7 +11,8 @@ Obrigado por usar o **Polygon wallet** ("o Aplicativo"). Estamos comprometidos e
 No entanto, o Aplicativo pode coletar ou acessar as seguintes informações não pessoais:
 
 - **Informações da carteira**: Endereços de carteira gerados e dados relacionados (todos armazenados localmente no seu dispositivo)
-- **Dados de uso do aplicativo**: Para o propósito de melhorar o desempenho e estabilidade (via análise de falhas ou serviços similares)
+- **Dados de uso do aplicativo**: O Firebase Analytics coleta estatísticas agregadas e anônimas sobre como as funcionalidades são usadas (por exemplo, quais ações ocorrem e com que frequência). Nunca inclui endereços de carteira, chaves privadas, frases-semente ou valores de transações. Você pode desativar isso a qualquer momento em Configurações
+- **Informações de falhas**: O Firebase Crashlytics coleta o tipo e o local de uma falha, caso ocorra. Nunca inclui o texto da mensagem de erro nem qualquer dado que você tenha inserido
 - **Informações do dispositivo**: Limitado a detalhes técnicos anônimos como versão do sistema operacional e tamanho da tela
 
 ※ Não coletamos informações pessoais identificáveis (ex. nome, endereço, informações de contato).
@@ -35,7 +36,7 @@ Usamos informações não pessoais apenas para os seguintes propósitos:
 O Aplicativo pode usar serviços de terceiros como:
 
 - **Rede blockchain Polygon** (para funcionalidade da carteira)
-- **Ferramentas de relatório de falhas** (para melhorias de estabilidade do aplicativo)
+- **Firebase Analytics / Firebase Crashlytics** (fornecido pelo Google, para estatísticas de uso agregadas e relatórios de falhas; você pode desativar a qualquer momento em Configurações)
 
 Esses serviços podem coletar informações técnicas anônimas de acordo com suas próprias políticas de privacidade.
 

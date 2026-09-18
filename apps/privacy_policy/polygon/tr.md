@@ -1,6 +1,6 @@
 # Gizlilik Politikası
 
-_Son güncelleme: 22 Ocak 2025_
+_Son güncelleme: 18 Eylül 2026_
 
 **Polygon wallet** ("Uygulama") kullandığınız için teşekkür ederiz. Gizliliğinizi korumaya kararlıyız. Bu Gizlilik Politikası, Uygulamayı kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını ve açıklandığını açıklar.
 
@@ -11,7 +11,8 @@ Kullanıcılardan **hiçbir kişisel tanımlayıcı bilgi toplamıyoruz**.
 Ancak, Uygulama aşağıdaki kişisel olmayan bilgileri toplayabilir veya bunlara erişebilir:
 
 - **Cüzdan bilgileri**: Oluşturulan cüzdan adresleri ve ilgili veriler (tümü cihazınızda yerel olarak saklanır)
-- **Uygulama kullanım verileri**: Performans ve kararlılığı iyileştirmek amacıyla (çökme analitiği veya benzer hizmetler aracılığıyla)
+- **Uygulama kullanım verileri**: Firebase Analytics, özelliklerin nasıl kullanıldığına dair anonim, toplu istatistikler toplar (örneğin hangi işlemlerin ne sıklıkta yapıldığı). Cüzdan adreslerini, özel anahtarları, kurtarma ifadelerini veya işlem tutarlarını asla içermez. Bunu istediğiniz zaman Ayarlar'dan kapatabilirsiniz
+- **Çökme bilgileri**: Firebase Crashlytics, bir çökme olursa türünü ve konumunu toplar. Hata mesajı metnini veya girdiğiniz herhangi bir şeyi asla içermez
 - **Cihaz bilgileri**: İşletim sistemi sürümü ve ekran boyutu gibi anonim teknik ayrıntılarla sınırlı
 
 ※ Kişisel tanımlayıcı bilgileri (örn. ad, adres, iletişim bilgileri) toplamıyoruz.
@@ -35,7 +36,7 @@ Kişisel olmayan bilgileri yalnızca aşağıdaki amaçlar için kullanırız:
 Uygulama aşağıdaki gibi üçüncü taraf hizmetleri kullanabilir:
 
 - **Polygon blok zinciri ağı** (cüzdan işlevselliği için)
-- **Çökme raporlama araçları** (uygulama kararlılığı iyileştirmeleri için)
+- **Firebase Analytics / Firebase Crashlytics** (Google tarafından sağlanır, toplu kullanım istatistikleri ve çökme raporlama için; Ayarlar'dan istediğiniz zaman vazgeçebilirsiniz)
 
 Bu hizmetler kendi gizlilik politikalarına göre anonim teknik bilgiler toplayabilir.
 

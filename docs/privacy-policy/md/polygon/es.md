@@ -1,6 +1,6 @@
 # Política de Privacidad
 
-_Última actualización: 22 de enero de 2025_
+_Última actualización: 18 de septiembre de 2026_
 
 Gracias por usar **Polygon wallet** ("la Aplicación"). Estamos comprometidos a proteger su privacidad. Esta Política de Privacidad explica cómo se recopila, utiliza y divulga su información cuando usa la Aplicación.
 
@@ -11,7 +11,8 @@ Gracias por usar **Polygon wallet** ("la Aplicación"). Estamos comprometidos a 
 Sin embargo, la Aplicación puede recopilar o acceder a la siguiente información no personal:
 
 - **Información de billetera**: Direcciones de billetera generadas y datos relacionados (todo almacenado localmente en su dispositivo)
-- **Datos de uso de la aplicación**: Con el propósito de mejorar el rendimiento y la estabilidad (a través de análisis de errores o servicios similares)
+- **Datos de uso de la aplicación**: Firebase Analytics recopila estadísticas agregadas y anónimas sobre cómo se usan las funciones (por ejemplo, qué acciones se realizan y con qué frecuencia). Nunca incluye direcciones de billetera, claves privadas, frases mnemotécnicas ni importes de transacciones. Puede desactivarlo en cualquier momento desde Ajustes
+- **Información de fallos**: Firebase Crashlytics recopila el tipo y la ubicación de un fallo, si ocurre. Nunca incluye el texto del mensaje de error ni nada que haya introducido
 - **Información del dispositivo**: Limitado a detalles técnicos anónimos como la versión del sistema operativo y el tamaño de pantalla
 
 ※ No recopilamos información de identificación personal (ej. nombre, dirección, información de contacto).
@@ -35,7 +36,7 @@ Usamos información no personal solo para los siguientes propósitos:
 La Aplicación puede usar servicios de terceros como:
 
 - **Red blockchain de Polygon** (para funcionalidad de billetera)
-- **Herramientas de reporte de errores** (para mejoras de estabilidad de la aplicación)
+- **Firebase Analytics / Firebase Crashlytics** (proporcionado por Google, para estadísticas de uso agregadas e informes de fallos; puede optar por no participar en cualquier momento desde Ajustes)
 
 Estos servicios pueden recopilar información técnica anónima según sus propias políticas de privacidad.
 

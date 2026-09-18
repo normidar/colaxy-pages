@@ -1,6 +1,6 @@
 # Privacy Policy
 
-_Last updated: January 22, 2025_
+_Last updated: September 18, 2026_
 
 Thank you for using **Polygon wallet** ("the App"). We are committed to protecting your privacy. This Privacy Policy explains how your information is collected, used, and disclosed when you use the App.
 
@@ -11,7 +11,8 @@ We **do not collect any personally identifiable information** from users.
 However, the App may collect or access the following non-personal information:
 
 - **Wallet information**: Generated wallet addresses and related data (all stored locally on your device)
-- **App usage data**: For the purpose of improving performance and stability (via crash analytics or similar services)
+- **App usage data**: Firebase Analytics collects anonymous, aggregate statistics about how features are used (e.g., which actions happen and how often). It never includes wallet addresses, private keys, mnemonics, or transaction amounts. You can turn this off at any time in Settings
+- **Crash information**: Firebase Crashlytics collects the type and location of a crash, if one occurs. It never includes error message text or anything you entered
 - **Device information**: Limited to anonymous technical details such as OS version and screen size
 
 ※ We do not collect personally identifiable information (e.g., name, address, contact info).
@@ -35,7 +36,7 @@ We use non-personal information only for the following purposes:
 The App may use third-party services such as:
 
 - **Polygon blockchain network** (for wallet functionality)
-- **Crash reporting tools** (for app stability improvements)
+- **Firebase Analytics / Firebase Crashlytics** (provided by Google, for aggregate usage statistics and crash reporting — you can opt out at any time in Settings)
 
 These services may collect anonymous technical information as per their own privacy policies.
 
