@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - AI LABO</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/marked.min.js"></script>
+    <style>
+        body {
+            padding: 2rem;
+        }
+        .markdown-body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+        <a href="../../index.html" class="logo" style="display: inline-block; margin-bottom: 1rem;">Coin Galaxy</a>
+        <a href="../../index.html" class="back-btn">← Ana Sayfaya Dön</a>
+    </div>
+    <div id="content" class="markdown-body"></div>
+    <script>
+        fetch('../md/ailabo/tr.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            });
+    </script>
+</body>
+</html>

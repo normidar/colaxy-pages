@@ -126,4 +126,40 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/ailabo/ja.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/ailabo/en.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/ailabo/zh-CN.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/ailabo/tr.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/ailabo/pt.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/ailabo/es.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>
