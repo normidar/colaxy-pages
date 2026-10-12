@@ -1,6 +1,6 @@
 # Gizlilik Politikası (AI LABO)
 
-_Son güncelleme: 26 Eylül 2026_
+_Son güncelleme: 12 Ekim 2026_
 
 "AI LABO" (bundan sonra "Uygulama" olarak anılacaktır), yapay zekanın kullanıcı adına cihaz özelliklerini çalıştırmasını sağlayan bir yardımcı program uygulamasıdır. Bu politika, Uygulamanın hangi bilgileri işlediğini açıklar.
 
@@ -36,6 +36,7 @@ Aşağıdakiler yalnızca uygulamanın sağladığı yapay zeka modelini kullanm
 - Giriş: Google, Apple veya e-posta adresi ve şifre ile giriş yapabilirsiniz (Firebase Authentication aracılığıyla). Yalnızca e-posta adresiniz ve seçtiğiniz giriş yönteminin verdiği bir tanımlayıcı toplanır.
 - Arka uç sunucusu: Giriş yaptıktan sonra sohbet istekleriniz, abonelik durumunuzu kontrol etmek ve aylık kullanımınızı takip etmek amacıyla geliştiricinin işlettiği bir arka uç sunucusundan (Google Cloud Run, Google Cloud altyapısında çalışır) geçer.
 - Abonelik yönetimi: Satın almalar, geri yükleme ve abonelik durumu RevenueCat (<https://www.revenuecat.com/privacy>) tarafından yönetilir. App Store / Google Play satın alma bilgileriniz bu amaçla RevenueCat ile paylaşılır.
+- Davet kodları: Bir davet kodu oluşturduğunuzda veya girdiğinizde, bonusu (ek aylık kullanım) hesaplamak için hangi hesabın hangisini davet ettiğini ve kendi kodunuzu sunucumuzda saklarız. Davet eden hesabın uygulamasında, davet edilen her kişi için bir sıra numarası, davet tarihi, mevcut yapay zeka planı (Mini / Standard) ve bunun sağladığı bonus yüzdesi gösterilir. Taraflardan herhangi birini tanımlayabilecek e-posta adresi gibi bilgiler karşı tarafa asla gösterilmez. Hesabınızı silerseniz davet kodunuz da silinir.
 
 ## 5. Cihaz özelliklerine erişim
 

@@ -1,6 +1,6 @@
 # Privacy Policy (AI LABO)
 
-_Last updated: September 26, 2026_
+_Last updated: October 12, 2026_
 
 "AI LABO" (the "App") is a utility app that lets an AI operate device features on the user's behalf. This policy explains what information the App handles.
 
@@ -36,6 +36,7 @@ The following only applies if you use the app-provided AI model. None of this ha
 - Sign-in: You can sign in with Google, Apple, or an email address and password (via Firebase Authentication). Only your email address and an identifier issued by your chosen sign-in method are collected.
 - Backend server: Once signed in, your chat requests pass through a backend server the developer operates (Google Cloud Run, running on Google Cloud infrastructure) so it can check your subscription status and track monthly usage.
 - Subscription management: Purchases, restores, and subscription status are handled by RevenueCat (<https://www.revenuecat.com/privacy>). Your App Store / Google Play purchase information is shared with RevenueCat for this purpose.
+- Referral codes: When you create or enter a referral code, we store on our server which account referred which, along with your own code, to calculate the bonus (extra monthly allowance). The referring account's app shows, for each person it referred, a sequence number, the date they were referred, their current AI plan (Mini / Standard) and the resulting bonus percentage. Email addresses and other details that could identify either side are never shown to the other. Deleting your account deletes your referral code.
 
 ## 5. Access to device features
 

@@ -1,6 +1,6 @@
 # Política de Privacidade (AI LABO)
 
-_Última atualização: 26 de setembro de 2026_
+_Última atualização: 12 de outubro de 2026_
 
 A "AI LABO" (doravante "a App") é uma aplicação utilitária que permite a uma IA operar funcionalidades do dispositivo em nome do utilizador. Esta política explica que informação a App trata.
 
@@ -36,6 +36,7 @@ O seguinte aplica-se apenas se utilizar o modelo de IA fornecido pela app. Nada 
 - Início de sessão: Pode iniciar sessão com Google, Apple, ou email e palavra-passe (através do Firebase Authentication). Apenas são recolhidos o seu endereço de email e um identificador emitido pelo método de início de sessão escolhido.
 - Servidor backend: Após iniciar sessão, os seus pedidos de chat passam por um servidor backend operado pelo programador (Google Cloud Run, executado na infraestrutura da Google Cloud), para verificar o estado da subscrição e controlar a utilização mensal.
 - Gestão de subscrição: As compras, restauros e o estado da subscrição são geridos pela RevenueCat (<https://www.revenuecat.com/privacy>). A sua informação de compra na App Store / Google Play é partilhada com a RevenueCat para este fim.
+- Códigos de convite: Quando cria ou introduz um código de convite, guardamos no nosso servidor que conta convidou qual, juntamente com o seu próprio código, para calcular o bónus (utilização mensal adicional). A app da conta que convida mostra, para cada pessoa convidada, um número de ordem, a data do convite, o seu plano de IA atual (Mini / Standard) e a percentagem de bónus resultante. O email e outros dados que possam identificar qualquer uma das partes nunca são mostrados à outra. Ao eliminar a sua conta, o seu código de convite é eliminado.
 
 ## 5. Acesso a funcionalidades do dispositivo
 
