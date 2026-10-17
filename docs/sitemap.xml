@@ -162,4 +162,16 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/vectorbible/en.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://normidar.com/privacy-policy/vectorbible/zh.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>
