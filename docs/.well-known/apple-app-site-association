@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "3AR8GK4ZV7.com.normidar.ailabo",
+          "3AR8GK4ZV7.com.normidar.ailabo.dev"
+        ],
+        "components": [
+          { "/": "/ailabo/run*", "comment": "AI LABO shortcut links and NFC tags" }
+        ]
+      }
+    ]
+  }
+}

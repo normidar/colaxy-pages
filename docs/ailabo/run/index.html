@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>AI LABO</title>
+<!-- AI LABO の快捷指令リンク・NFC タグの案内ページ（apps/ailabo の lib/src/services/launch_link.dart）。
+     アプリが入っていれば iOS は Universal Link、Android は NFC の振り分けでアプリが開くので、
+     ここが出るのはアプリが無いとき・ブラウザで開いたとき。指示文はこのページの中だけで読み、どこにも送らない。 -->
+<style>
+  :root {
+    --bg: #f6f6fb; --card: #ffffff; --text: #1b1b24; --muted: #5e5e70;
+    --accent: #3f51b5; --accent-text: #ffffff; --border: #dcdce8; --quote: #eef0fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12121a; --card: #1d1d28; --text: #ececf4; --muted: #a3a3b8;
+      --accent: #8c9eff; --accent-text: #10102a; --border: #33334a; --quote: #262640;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans", sans-serif;
+    display: flex; align-items: center; justify-content: center; padding: 24px 16px;
+  }
+  main {
+    width: 100%; max-width: 440px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 28px 22px; text-align: center;
+  }
+  .icon { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 1.4rem; margin: 12px 0 4px; }
+  p { margin: 8px 0; color: var(--muted); }
+  blockquote {
+    margin: 16px 0; padding: 14px 16px; background: var(--quote); border-radius: 12px;
+    color: var(--text); text-align: left; white-space: pre-wrap; word-break: break-word;
+  }
+  .btn {
+    display: block; padding: 13px 16px; margin-top: 10px; border-radius: 999px;
+    text-decoration: none; font-weight: 600; border: 1px solid var(--border); color: var(--text);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .note { font-size: 0.85rem; margin-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="../../icon/apps/ailabo.png" alt="" onerror="this.style.display='none'">
+  <h1>AI LABO</h1>
+  <p id="lead"></p>
+  <blockquote id="prompt" hidden></blockquote>
+  <a class="btn primary" id="open" href="#"></a>
+  <a class="btn" href="https://apps.apple.com/app/id6814172348">App Store</a>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.normidar.ailabo">Google Play</a>
+  <p class="note" id="note"></p>
+</main>
+<script>
+  var T = {
+    en: ["This link asks AI LABO, an AI that can operate your phone, to do:", "Open in AI LABO", "Don't have the app? Get it below, then tap the tag or link again."],
+    ja: ["このリンクは、スマホを操作できる AI「AI LABO」に次のことを頼んでいます:", "AI LABO で開く", "アプリをお持ちでない方は下から入手し、もう一度タグやリンクをタップしてください。"],
+    zh: ["这个链接请求能操作手机的 AI「AI LABO」执行：", "在 AI LABO 中打开", "还没有安装？从下方下载后，再碰一次标签或点一次链接。"],
+    es: ["Este enlace pide a AI LABO, una IA que maneja tu teléfono, que haga:", "Abrir en AI LABO", "¿No tienes la app? Descárgala abajo y vuelve a tocar la etiqueta o el enlace."],
+    pt: ["Esta ligação pede ao AI LABO, uma IA que opera o seu telemóvel, que faça:", "Abrir no AI LABO", "Não tem a app? Obtenha-a abaixo e toque novamente na etiqueta ou ligação."],
+    tr: ["Bu bağlantı, telefonunuzu kullanabilen yapay zekâ AI LABO'dan şunu istiyor:", "AI LABO'da aç", "Uygulama yok mu? Aşağıdan indirin, sonra etikete veya bağlantıya tekrar dokunun."]
+  };
+  var lang = (navigator.language || "en").slice(0, 2).toLowerCase();
+  var t = T[lang] || T.en;
+  document.documentElement.lang = T[lang] ? lang : "en";
+
+  var params = new URLSearchParams(location.search);
+  function decode(b64) {
+    try {
+      var s = b64.replace(/-/g, "+").replace(/_/g, "/");
+      while (s.length % 4) s += "=";
+      var bin = atob(s), bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return new TextDecoder().decode(bytes);
+    } catch (e) { return ""; }
+  }
+  var prompt = params.get("p") ? decode(params.get("p")) : (params.get("t") || "");
+
+  document.getElementById("lead").textContent = prompt ? t[0] : "";
+  if (prompt) {
+    var q = document.getElementById("prompt");
+    q.textContent = prompt;  // textContent: 指示文を HTML として解釈しない
+    q.hidden = false;
+  }
+  var open = document.getElementById("open");
+  open.textContent = t[1];
+  open.href = "ailabo://run" + location.search;
+  document.getElementById("note").textContent = t[2];
+</script>
+</body>
+</html>
