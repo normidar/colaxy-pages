@@ -1,6 +1,6 @@
 # Privacy Policy (AI LABO)
 
-_Last updated: November 5, 2026_
+_Last updated: November 19, 2026_
 
 "AI LABO" (the "App") is a utility app that lets an AI operate device features on the user's behalf. This policy explains what information the App handles.
 
@@ -9,7 +9,7 @@ _Last updated: November 5, 2026_
 The App offers two ways to use it:
 
 - App-provided AI model (subscription, the default): After signing in (see section 4) and subscribing, you can use AI models the developer provides without obtaining your own API key. In this mode, your chat content and the AI features described in section 3 pass through a backend server the developer operates (running on Google Cloud Run) to OpenRouter.
-- Your own API key (BYOK, "bring your own key", available in Advanced mode): In Settings, you enter your own API key for one of the following providers: OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini), or xAI (Grok). This mode requires no login, and requests go directly from your device to the provider without passing through any server operated by the developer.
+- Your own API key (BYOK, "bring your own key", available in Advanced mode): In Settings, you enter your own API key for one of the following providers: OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini), or xAI (Grok). This mode requires no login, and requests go directly from your device to the provider without passing through any server operated by the developer. With an OpenRouter key, the App also sends OpenRouter a random identifier created on your device (not linked to your account) so that consecutive requests go to the same provider and can reuse its prompt cache.
 
 ## 2. Handling of API keys (BYOK mode)
 

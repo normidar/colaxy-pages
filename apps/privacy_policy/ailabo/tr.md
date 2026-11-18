@@ -1,6 +1,6 @@
 # Gizlilik Politikası (AI LABO)
 
-_Son güncelleme: 5 Kasım 2026_
+_Son güncelleme: 19 Kasım 2026_
 
 "AI LABO" (bundan sonra "Uygulama" olarak anılacaktır), yapay zekanın kullanıcı adına cihaz özelliklerini çalıştırmasını sağlayan bir yardımcı program uygulamasıdır. Bu politika, Uygulamanın hangi bilgileri işlediğini açıklar.
 
@@ -9,7 +9,7 @@ _Son güncelleme: 5 Kasım 2026_
 Uygulama iki kullanım şekli sunar:
 
 - Uygulamanın sağladığı yapay zeka modeli (abonelik, varsayılan seçenek): Giriş yaptıktan sonra (bkz. bölüm 4) abone olarak, kendi API anahtarınızı almadan geliştiricinin sağladığı yapay zeka modellerini kullanabilirsiniz. Bu modda sohbet içeriğiniz ve bölüm 3'te açıklanan yapay zeka özellikleri, geliştiricinin işlettiği bir arka uç sunucusu (Google Cloud Run üzerinde çalışır) üzerinden OpenRouter'a gönderilir.
-- Kendi API anahtarınız (BYOK, "kendi anahtarınızı getirin", gelişmiş modda kullanılabilir): Ayarlar'da OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini) veya xAI (Grok) sağlayıcılarından birine ait kendi API anahtarınızı girersiniz. Bu modda giriş yapmanız gerekmez; istekler cihazınızdan doğrudan sağlayıcıya gider ve geliştiricinin işlettiği herhangi bir sunucudan geçmez.
+- Kendi API anahtarınız (BYOK, "kendi anahtarınızı getirin", gelişmiş modda kullanılabilir): Ayarlar'da OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini) veya xAI (Grok) sağlayıcılarından birine ait kendi API anahtarınızı girersiniz. Bu modda giriş yapmanız gerekmez; istekler cihazınızdan doğrudan sağlayıcıya gider ve geliştiricinin işlettiği herhangi bir sunucudan geçmez. OpenRouter anahtarı kullandığınızda, art arda gelen isteklerin aynı sağlayıcıya gitmesi ve onun istem önbelleğini yeniden kullanabilmesi için Uygulama, cihazınızda oluşturulan rastgele bir tanımlayıcıyı (hesabınızla ilişkili değildir) da OpenRouter'a gönderir.
 
 ## 2. API anahtarlarının işlenmesi (BYOK modu)
 

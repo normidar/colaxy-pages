@@ -1,6 +1,6 @@
 # Política de Privacidade (AI LABO)
 
-_Última atualização: 5 de novembro de 2026_
+_Última atualização: 19 de novembro de 2026_
 
 A "AI LABO" (doravante "a App") é uma aplicação utilitária que permite a uma IA operar funcionalidades do dispositivo em nome do utilizador. Esta política explica que informação a App trata.
 
@@ -9,7 +9,7 @@ A "AI LABO" (doravante "a App") é uma aplicação utilitária que permite a uma
 A App oferece duas formas de utilização:
 
 - Modelo de IA fornecido pela app (subscrição, a opção predefinida): Após iniciar sessão (ver secção 4) e subscrever, pode utilizar modelos de IA fornecidos pelo programador sem obter a sua própria chave de API. Neste modo, o conteúdo das suas conversas e as funcionalidades de IA descritas na secção 3 passam por um servidor backend operado pelo programador (executado no Google Cloud Run) até ao OpenRouter.
-- A sua própria chave de API (BYOK, "traga a sua própria chave", disponível no modo avançado): Nas Definições, introduz a sua própria chave de API para um dos seguintes fornecedores: OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini) ou xAI (Grok). Este modo não requer início de sessão, e os pedidos vão diretamente do seu dispositivo para o fornecedor, sem passar por nenhum servidor operado pelo programador.
+- A sua própria chave de API (BYOK, "traga a sua própria chave", disponível no modo avançado): Nas Definições, introduz a sua própria chave de API para um dos seguintes fornecedores: OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini) ou xAI (Grok). Este modo não requer início de sessão, e os pedidos vão diretamente do seu dispositivo para o fornecedor, sem passar por nenhum servidor operado pelo programador. Com uma chave do OpenRouter, a App também envia ao OpenRouter um identificador aleatório criado no seu dispositivo (não associado à sua conta), para que os pedidos seguidos vão para o mesmo fornecedor e possam reutilizar a sua cache de prompts.
 
 ## 2. Tratamento das chaves de API (modo BYOK)
 
