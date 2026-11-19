@@ -1,6 +1,6 @@
 # Gizlilik Politikası (AI LABO)
 
-_Son güncelleme: 5 Kasım 2026_
+_Son güncelleme: 19 Kasım 2026_
 
 "AI LABO" (bundan sonra "Uygulama" olarak anılacaktır), yapay zekanın kullanıcı adına cihaz özelliklerini çalıştırmasını sağlayan bir yardımcı program uygulamasıdır. Bu politika, Uygulamanın hangi bilgileri işlediğini açıklar.
 
@@ -9,7 +9,7 @@ _Son güncelleme: 5 Kasım 2026_
 Uygulama iki kullanım şekli sunar:
 
 - Uygulamanın sağladığı yapay zeka modeli (abonelik, varsayılan seçenek): Giriş yaptıktan sonra (bkz. bölüm 4) abone olarak, kendi API anahtarınızı almadan geliştiricinin sağladığı yapay zeka modellerini kullanabilirsiniz. Bu modda sohbet içeriğiniz ve bölüm 3'te açıklanan yapay zeka özellikleri, geliştiricinin işlettiği bir arka uç sunucusu (Google Cloud Run üzerinde çalışır) üzerinden OpenRouter'a gönderilir.
-- Kendi API anahtarınız (BYOK, "kendi anahtarınızı getirin", gelişmiş modda kullanılabilir): Ayarlar'da OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini) veya xAI (Grok) sağlayıcılarından birine ait kendi API anahtarınızı girersiniz. Bu modda giriş yapmanız gerekmez; istekler cihazınızdan doğrudan sağlayıcıya gider ve geliştiricinin işlettiği herhangi bir sunucudan geçmez.
+- Kendi API anahtarınız (BYOK, "kendi anahtarınızı getirin", gelişmiş modda kullanılabilir): Ayarlar'da OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini) veya xAI (Grok) sağlayıcılarından birine ait kendi API anahtarınızı girersiniz. Bu modda giriş yapmanız gerekmez; istekler cihazınızdan doğrudan sağlayıcıya gider ve geliştiricinin işlettiği herhangi bir sunucudan geçmez. OpenRouter anahtarı kullandığınızda, art arda gelen isteklerin aynı sağlayıcıya gitmesi ve onun istem önbelleğini yeniden kullanabilmesi için Uygulama, cihazınızda oluşturulan rastgele bir tanımlayıcıyı (hesabınızla ilişkili değildir) da OpenRouter'a gönderir.
 
 ## 2. API anahtarlarının işlenmesi (BYOK modu)
 
@@ -64,6 +64,7 @@ Aşağıdakiler yalnızca uygulamanın sağladığı yapay zeka modelini kullanm
 - Bu işlemlerin sonuçları (fotoğraflar, kayıtlar, videolar, dosyalar, veritabanları, yapılacaklar listesi, yapay zekanın hafızası) ve sohbet geçmişiniz yalnızca cihazınızda saklanır. Geliştiricinin işlettiği herhangi bir sunucuya yüklenmez; cihazınızdan yalnızca bölüm 3'te açıklandığı şekilde çıkar (yapay zeka bunları okuduğunda veya kullandığında yapay zeka sağlayıcısına ya da yapay zekanın istek gönderdiği siteye).
 - Diğer uygulamalardan Uygulamaya paylaştığınız metin ve dosyalar yalnızca yeni bir sohbetin mesaj kutusuna konur (dosyalar Uygulamanın klasörüne kopyalanır). Mesajı siz göndermedikçe hiçbir şey gönderilmez.
 - Varsayılan olarak araçlar, uygulama içinde ek bir onay olmadan çalışır. Ayarlar > Araç izinleri bölümünden her aracı ayrı ayrı "Sor" (çalışmadan önce bir onay ekranı gösterilir) veya "Reddet" (yapay zeka asla çalıştıramaz) olarak ayarlayabilirsiniz. Bu ayarlardan bağımsız olarak Uygulama, sohbet kişisel verilerinizle birlikte dış içerik de gördükten sonra (bir web sayfası ya da QR, NFC veya Bluetooth okuması gibi) verilerinizi cihaz dışına gönderebilecek bir istekten önce ve bir dosyanın üzerine yazmak ya da bir takvim etkinliğini silmek gibi geri alınamayan işlemlerden önce her zaman size sorar. Bundan ayrı olarak, Uygulama kamera, mikrofon, konum, takvim, kişiler vb. özelliklere ilk kez erişmeden önce işletim sisteminin kendi izin iletişim kutuları her zaman gösterilir.
+- Yapay zekanın oluşturduğu web sayfaları, o sayfanın "Web sitesi izinleri"nin izin verdiği ölçüde yukarıdaki cihaz özelliklerini (mikrofon seviyesini okuma, kayıt ve oynatma, dosyalar, konum vb.; görüntü/video üretimi, yazıya dökme ve yapay zekanın hafızası hariç) kullanabilir. Varsayılan olarak her şeye izin verilir ve sayfalar bir özelliği kullanmadan önce sormaz (yukarıda açıklanan onaylar yapay zeka bir araç çalıştırdığında geçerlidir). Sayfalar internete bağlanabildiği için sayfanın betikleri okudukları verileri dış sitelere gönderebilir. İzinleri sayfanın menüsü > Site izinleri bölümünden değiştirebilirsiniz. Bir sayfa mikrofonu yalnızca açıkken ve ekran açıkken kullanır ve kullanırken bu ekranda gösterilir.
 - Telefon aramaları ve kısa mesajlar yalnızca içerik önceden doldurulmuş şekilde arama/mesajlaşma uygulamasını açmakla sınırlıdır - Uygulama hiçbir zaman kendi başına arama yapmaz veya mesaj göndermez; son işlemi her zaman siz gerçekleştirirsiniz.
 - Konum, Bluetooth, takvim, kişiler ve benzeri veriler yalnızca yapay zeka sizin talimatınızla bunları istediğinde alınır; Uygulama bunlara arka planda sürekli erişmez. Yapay zeka bir yanıt üzerinde çalışırken Uygulamadan çıkarsanız bir süre çalışmaya devam edebilir; bu sırada gösterilen bildirim sohbet içeriğini değil, yalnızca durumunu içerir. Planlanan görevler yalnızca Uygulama açıkken çalışır.
 

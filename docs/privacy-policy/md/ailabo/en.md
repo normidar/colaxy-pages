@@ -1,6 +1,6 @@
 # Privacy Policy (AI LABO)
 
-_Last updated: November 5, 2026_
+_Last updated: November 19, 2026_
 
 "AI LABO" (the "App") is a utility app that lets an AI operate device features on the user's behalf. This policy explains what information the App handles.
 
@@ -9,7 +9,7 @@ _Last updated: November 5, 2026_
 The App offers two ways to use it:
 
 - App-provided AI model (subscription, the default): After signing in (see section 4) and subscribing, you can use AI models the developer provides without obtaining your own API key. In this mode, your chat content and the AI features described in section 3 pass through a backend server the developer operates (running on Google Cloud Run) to OpenRouter.
-- Your own API key (BYOK, "bring your own key", available in Advanced mode): In Settings, you enter your own API key for one of the following providers: OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini), or xAI (Grok). This mode requires no login, and requests go directly from your device to the provider without passing through any server operated by the developer.
+- Your own API key (BYOK, "bring your own key", available in Advanced mode): In Settings, you enter your own API key for one of the following providers: OpenRouter, Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini), or xAI (Grok). This mode requires no login, and requests go directly from your device to the provider without passing through any server operated by the developer. With an OpenRouter key, the App also sends OpenRouter a random identifier created on your device (not linked to your account) so that consecutive requests go to the same provider and can reuse its prompt cache.
 
 ## 2. Handling of API keys (BYOK mode)
 
@@ -64,6 +64,7 @@ At your request, the AI can operate the following device features: flashlight, v
 - The results of these actions (photos, recordings, videos, files, databases, the to-do list, the AI's memory) and your chat history are stored only on your device. They are not uploaded to any server operated by the developer; they leave your device only as described in section 3 (sent to the AI provider when the AI reads or uses them, or to a site the AI sends a request to).
 - Text and files you share to the App from other apps are only placed in the message box of a new chat (files are copied into the App's folder). Nothing is sent until you send the message yourself.
 - By default, tools run without an extra in-app confirmation. In Settings > Tool permissions you can set each tool to "Ask" (a confirmation screen is shown before it runs) or "Deny" (the AI can never run it). Regardless of these settings, the App always asks you first before a request that could send your data off the device once the conversation has seen outside content (such as a web page or a QR, NFC or Bluetooth reading) together with your personal data, and before actions that cannot be undone, such as overwriting a file or deleting a calendar event. Separately, the operating system's own permission dialogs (camera, microphone, location, calendar, contacts, etc.) are always shown before the App can access those features for the first time.
+- Web pages made by the AI can use the device features above (reading the microphone level, recording and playback, files, location and so on; not image/video generation, transcription or the AI's memory) as far as that page's "Website permissions" allow. By default everything is allowed and pages do not ask before using a feature (the confirmations described above apply when the AI runs a tool). Pages can connect to the internet, so a page's scripts may send data they read to outside sites. You can change the permissions from the page's menu > Website permissions. A page only uses the microphone while it is open and the screen is on, and the screen shows when it does.
 - Phone calls and text messages only go as far as opening the dialer / messaging app with the content pre-filled - the App never places a call or sends a message on its own; you always perform the final action yourself.
 - Location, Bluetooth, calendar, contacts and similar data are only accessed when the AI requests them at your instruction; the App does not continuously access them in the background. While the AI is working on a reply, it may keep running for a while after you leave the App; the notification shown then contains only its status, not your chat content. Scheduled tasks run only while the App is open.
 
